@@ -4,13 +4,57 @@
   <title><![CDATA[｛方蟀｝]]></title>
   <link href="http://yuyandong.com/atom.xml" rel="self"/>
   <link href="http://yuyandong.com/"/>
-  <updated>2015-11-17T19:16:18+08:00</updated>
+  <updated>2015-11-17T22:26:31+08:00</updated>
   <id>http://yuyandong.com/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[HTML 5 学习记录 --「图片滑动墙」]]></title>
+    <link href="http://yuyandong.com/14477677420859.html"/>
+    <updated>2015-11-17T21:42:22+08:00</updated>
+    <id>http://yuyandong.com/14477677420859.html</id>
+    <content type="html"><![CDATA[
+<p>比如基于<code>Foundation</code>创建的该博客主题里，有一个比较有趣的滑动图片效果：</p>
+
+<ul class="example-orbit" data-orbit>
+ 
+
+  <li>
+    <img src="media/14477677420859/IMG_0461.jpg" alt="" />
+    <div class="orbit-caption"> 图 1</div>
+  </li>
+  <li>
+    <img src="media/14477677420859/IMG_0491.jpg" alt="" />
+    <div class="orbit-caption"> 图 2</div>
+  </li>
+</ul>
+
+<p>通过查看以下HTML 代码，应该是该主题在 CSS中 通过<code>div</code> 标记的 <code>class=&quot;orbit-caption&quot;</code>对2个图片采用同一个设定，实现图片滑动功能。</p>
+
+<pre><code>&lt;ul class=&quot;example-orbit&quot; data-orbit&gt;
+ 
+
+  &lt;li&gt;
+    &lt;img src=&quot;media/14477677420859/IMG_0461.jpg&quot; alt=&quot;&quot; /&gt;
+    &lt;div class=&quot;orbit-caption&quot;&gt; 图 1&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;img src=&quot;media/14477677420859/IMG_0491.jpg&quot; alt=&quot;&quot; /&gt;
+    &lt;div class=&quot;orbit-caption&quot;&gt; 图 2&lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<p>这里</p>
+
+<p>当然来自 <a href="http://foundation.zurb.com/docs/components/orbit.html">Foundation</a> 官方的信息，<code>Orbit</code> 将由拥有更多功能的<a href="http://kenwheeler.github.io/slick/">Slick Carousel</a> 取代</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[入门]]></title>

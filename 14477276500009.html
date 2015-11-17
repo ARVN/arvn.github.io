@@ -69,6 +69,8 @@
 
         
             <li><a href="%E8%81%98%E6%96%B9.html">「聘方」系列小品</a></li>
+        
+            <li><a href="%E7%8C%AB%E6%8A%80%E6%9C%AF.html">猫技术</a></li>
          
 
       </ul>
@@ -199,6 +201,8 @@ s.setAttribute('data-timestamp', +new Date());
       	<p class="cat-list">
         
             <a href="%E8%81%98%E6%96%B9.html"><strong>「聘方」系列小品</strong></a>
+        
+            <a href="%E7%8C%AB%E6%8A%80%E6%9C%AF.html"><strong>猫技术</strong></a>
          
         </p>
 
@@ -213,6 +217,12 @@ s.setAttribute('data-timestamp', +new Date());
                 <div class="side-content">
                 <ul class="posts-list">
 	      
+		      
+			      <li class="post">
+			        <a href="14477677420859.html">HTML 5 学习记录 --「图片滑动墙」</a>
+			      </li>
+		     
+		  
 		      
 			      <li class="post">
 			        <a href="14477519570037.html">入门</a>
@@ -293,8 +303,8 @@ s.src = '//' + disqus_shortname + '.disqus.com/count.js';
      
     </script>
 
-    
-
+    <script src="asset/chart/all-min.js"></script><script type="text/javascript">$(function(){    var mwebii=0;    var mwebChartEleId = 'mweb-chart-ele-';    $('pre>code').each(function(){        mwebii++;        var eleiid = mwebChartEleId+mwebii;        if($(this).hasClass('language-sequence')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"><div>').insertAfter(ele);            ele.hide();            var diagram = Diagram.parse($(this).text());            diagram.drawSVG(eleiid,{theme: 'simple'});        }else if($(this).hasClass('language-flow')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"><div>').insertAfter(ele);            ele.hide();            var diagram = flowchart.parse($(this).text());            diagram.drawSVG(eleiid);        }    });});</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
   </body>
