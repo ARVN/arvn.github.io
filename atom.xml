@@ -4,7 +4,7 @@
   <title><![CDATA[｛方蟀｝]]></title>
   <link href="http://yuyandong.com/atom.xml" rel="self"/>
   <link href="http://yuyandong.com/"/>
-  <updated>2015-11-20T08:19:05+08:00</updated>
+  <updated>2015-11-27T14:33:07+08:00</updated>
   <id>http://yuyandong.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -13,7 +13,146 @@
   <generator uri="http://www.mweb.im/">MWeb</generator>
   
   <entry>
-    <title type="html"><![CDATA[更新blog 文件后，清晰、快速同步到github]]></title>
+    <title type="html"><![CDATA[Workflowy 样式更改小记]]></title>
+    <link href="http://yuyandong.com/14486029516788.html"/>
+    <updated>2015-11-27T13:42:31+08:00</updated>
+    <id>http://yuyandong.com/14486029516788.html</id>
+    <content type="html"><![CDATA[
+<ul>
+<li>安装扩展 <code>Stylish</code> </li>
+<li>为域名<code>Workflowy.com</code>创建 CSS 样式；</li>
+<li>然后导入下面的<code>效果代码</code>内的代码；</li>
+<li>修改为自己的图片网址；</li>
+</ul>
+
+<h3 id="toc_0">效果图</h3>
+
+<ul class="example-orbit" data-orbit>
+ 
+
+  <li>
+    <img src="media/14486029516788/14486044148070.jpg" alt="" />
+    <div class="orbit-caption"> 实例 1 </div>
+  </li>
+  <li>
+    <img src="media/14486029516788/14486052684903.jpg" alt="" />
+    <div class="orbit-caption"> 实例 2 </div>
+  </li>
+</ul>
+
+<h3 id="toc_1">背景图片</h3>
+
+<p><a href="https://images.unsplash.com/photo-1437419764061-2473afe69fc2?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;s=76fba3bdb1e04cb26a02000be2fe7740">实例 2 的背景图地址</a><br/>
+实例 1 背景图来自软件 OmmWriter</p>
+
+<h3 id="toc_2">效果代码</h3>
+
+<p>修改自以下两个样式：<br/>
+<a href="https://freestyler.ws/style/115618">Relaxing workflowy</a><br/>
+<a href="https://freestyler.ws/style/111688">Wunderflow</a></p>
+
+<pre><code>#bottomLinks {
+    display: none;
+}        
+#backgroundImage {
+    background: url(http://此处使用你的图片地址即可);  
+    background-size: 100% 100%; /*原图大小*/
+}
+.corner, .edge {
+    background: transparent;
+}
+div.page {
+    opacity: 0.85;
+}
+div.getMoreSpaceButton.hoverHand {
+    display: none;
+}
+img.proPitch {
+    display: none;
+}
+#header, #keyboardShortcutHelper {
+    -webkit-transition: opacity .2s;
+    opacity: 0;
+}
+
+#header:hover, #keyboardShortcutHelper:hover {
+    -webkit-transition: opacity .2s;
+    opacity: 1;
+}
+
+#pageContainer {
+    height: auto;
+}
+
+#share_buttons {
+    display: none;
+}
+
+#visible {
+    background: transparent ;
+    margin-top: 0;
+    padding-top: 0;
+    width: 400px;
+}
+
+#workflowy *, .editor textarea {
+    font-family: &quot;American Typewriter&quot; ;
+    font-size: 16px;
+    font-weight: normal;
+    text-shadow: rgba(255,255,255,.5) 1px 1px;
+}
+
+.bullet {
+    text-indent: 4px;
+}
+
+.top,.right,.bottom,.left {
+    display: none;
+}
+
+body {
+    background: none;
+    font-family: clearSans;
+    font-size: 1.05em;
+}
+
+div.content, .saveButton, .showCompletedButton, #buttonBar, #helpButton, #searchBox, #savedViewHUD {
+    font-family: Pt sans;
+    font-weight: normal;
+}
+
+div.footer {
+    display: none;
+}
+
+div.mainTreeRoot.project.open.selected {
+    height: auto;
+}
+
+div.page.active {
+    border-style: none;
+    height: auto;
+    padding-bottom: 75px;
+}
+
+div.pageStar {
+    display: none;
+}
+
+span.contentMatch {
+    background-color: #FFFFFF;
+}
+
+
+
+
+</code></pre>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[更新 blog 文件后，清晰、快速同步到 github]]></title>
     <link href="http://yuyandong.com/MWeb%E4%B8%8Egithub%E5%8F%91%E5%B8%83.html"/>
     <updated>2015-11-18T15:30:57+08:00</updated>
     <id>http://yuyandong.com/MWeb%E4%B8%8Egithub%E5%8F%91%E5%B8%83.html</id>
