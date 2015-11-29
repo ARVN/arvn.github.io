@@ -4,13 +4,81 @@
   <title><![CDATA[｛方蟀｝]]></title>
   <link href="http://yuyandong.com/atom.xml" rel="self"/>
   <link href="http://yuyandong.com/"/>
-  <updated>2015-11-27T14:33:07+08:00</updated>
+  <updated>2015-11-27T14:34:08+08:00</updated>
   <id>http://yuyandong.com/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[改用双拼输入法的记录]]></title>
+    <link href="http://yuyandong.com/14487770082898.html"/>
+    <updated>2015-11-29T14:03:28+08:00</updated>
+    <id>http://yuyandong.com/14487770082898.html</id>
+    <content type="html"><![CDATA[
+<p>一网友在朋友圈里调侃他自己“口口声声说要拥抱变化，用了多年全拼输入法，连双拼都不肯尝试” ，开始了他的改用双拼之路；<br/>
+我也写写自己前段时间是如何走双拼之路的；</p>
+
+<h2 id="toc_0">改练双拼的缘起</h2>
+
+<p>Mac OS X 升级 为 EI Capitan 后，默认的默认简体拼音输入法比较好用，而且支持双拼——智能ABC双拼方案。</p>
+
+<h2 id="toc_1">练习改变输入习惯</h2>
+
+<p>自己因为打字慢，也想打快一些，所以进行了一些练习和尝试；</p>
+
+<p>从维基上找出智能ABC 双拼方案的<strong>键位图</strong>  如下<br/>
+<img src="media/14487770082898/ZhiNengABC_DoublePinyinSchemas.png" alt="ZhiNengABC_DoublePinyinSchemas"/></p>
+
+<p>也尝试找了会助记词，自己觉得用处不大，还是得自己打字熟练键位比较容易记忆适应，新的打字习惯。<br/>
+我是从头练起，在练习键位的过程中记忆ABC的键位。<a href="http://www.keybr.com/">练习键位的网站</a></p>
+
+<h2 id="toc_2">改练双拼输入法后</h2>
+
+<p>速度上去了，一个字只要打两个键就完成了，且不用花过多的时间在选词上。</p>
+
+<p>还不够快的原因是：<br/>
+- 我全拼打字也不快；<br/>
+- 我基本只打词组，而不是句子。</p>
+
+<p>另外IOS上我用的是触宝输入法（支持智能ABC方案）</p>
+
+<h2 id="toc_3">助记参考</h2>
+
+<p>刚才写这篇记录的时候，在网上<a href="http://www.pkucn.com/thread-31271-1-1.html">北大中文论坛：剑凝’ 网友提到他的助记方法</a>比较简短，也好记忆，我也顺便联结放在这里让大家参考；</p>
+
+<blockquote>
+<p>我花了几个小时，编了个故事性的记忆口诀，能让你只用一小时就能记熟双拼键盘，而且不易忘记。<br/>
+首先：zh 在 A 键，ch 在 E 键，sh 在 V 键, en 在 F 键, eng 在 G 键, ang 在 H 键, an 在 J 键, uo 在 O 键, 这几个是很有规律性, 容易记忆的, 就不在口诀记忆之内了.<br/>
+  其它难记的, 尽纳入下面的口诀中.</p>
+</blockquote>
+
+<pre><code>记忆口诀：
+
+无烟日又二，
+妻泪特汪洋，
+嘤嘤破碗怨，
+送的蛙和鸭，
+烤来自咬些，
+此因歪，必殴！
+“你晕摸月偎”。
+
+
+口诀释意：
+
+无烟 W-ian 日又二 R-iu-er，   （无米下炊已经两天了。）
+妻泪 Q-ei 特汪洋 T-uang-iang，  （妻子的泪水特别多。）
+嘤嘤 Y-ing 破碗怨 P-uan-ǔan，   （嘤嘤哭着还摔破碗报怨。）
+送 S-ong 的蛙和鸭 D-ua-ia，   （ 朋友送来青蛙和鸭子救援）
+烤 K-ao 来 L-ai 自咬 Z-iao 些 X-ie， （丈夫烤来自已吃，却不管妻子）
+此因歪 C-in-uai，必殴 B-ou！   （这样自私举动是不好的，妻子必然会打丈夫的。）
+“你晕 N-un 摸月偎 M-ue-ui”。  （打得丈夫头晕晕，还说：“你如果头晕就摸着月亮靠住吧。哈哈~）
+</code></pre>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Workflowy 样式更改小记]]></title>
@@ -28,8 +96,6 @@
 <h3 id="toc_0">效果图</h3>
 
 <ul class="example-orbit" data-orbit>
- 
-
   <li>
     <img src="media/14486029516788/14486044148070.jpg" alt="" />
     <div class="orbit-caption"> 实例 1 </div>
@@ -295,9 +361,31 @@ To git@github.com:yuyandong/yuyandong.github.io.git
 
 <h3 id="toc_1">素质模型的来历</h3>
 
-<p>不得不提前面没讲的模型了。<br/>
-。。。。<br/>
+<p>不得不提前面没讲的模型了。</p>
+
+<p>戴维.麦克考兰 在 1973年发表的文章《测试能力特质而非“智力”》中提出要测试员工，特别是管理者的性格或技能，这些性格或技能能够区分绩效优劣。<br/>
+把工作分解成各种能力，开始寻找兼具智力、技能和其他相关特质的求职者。<br/>
+我们来看看人事决策的阶段；<br/>
+亿康先达公司全球人才寻访机构的负责人 费洛迪最近有一本书引入国内，书中费洛迪将人事决策分为四个时期<br/>
+第一时期强调身体；<br/>
+第二时期强调 智商、经验和业绩；<br/>
+第三时期强调素质特质<br/>
+第四时期强调潜力<br/>
+其实是优先考虑的能力，第一时期是优先考虑身体的时期；第二时期是优先考虑智商、经验和业绩的时期，第三个时期是优先考虑特质的时期，第四个时期当下是优先考虑潜力的时期；<br/>
+因为并不表示考虑特质的时候不考虑智力经验业绩和身体，也不是只考虑包含了成长能力和适应能力等因素的潜力，而忽视特质、智力、身体条件等因素；</p>
+
+<p>麦克考兰的素质模型考察推动了的第三个时期的到来。</p>
+
+<p>是优先考虑哪个能力作<br/>
 。。。。</p>
+
+<blockquote>
+<p>成功取决于个体设定的期望水平既有一定的高度但又没有超出“他们的能力范围”</p>
+</blockquote>
+
+<p>个体通常采用了错误的方式，从过去的表现来评估个人的目标设定。 </p>
+
+<p>。。。。</p>
 
 <h3 id="toc_2">模型的数量和质量</h3>
 
