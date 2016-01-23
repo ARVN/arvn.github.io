@@ -4,7 +4,7 @@
   <title><![CDATA[ Arvin Yu . 开放式面试|招聘]]></title>
   <link href="http://yuyandong.com/atom.xml" rel="self"/>
   <link href="http://yuyandong.com/"/>
-  <updated>2016-01-15T22:41:22+08:00</updated>
+  <updated>2016-01-23T12:19:35+08:00</updated>
   <id>http://yuyandong.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -13,13 +13,90 @@
   <generator uri="http://www.mweb.im/">MWeb</generator>
   
   <entry>
-    <title type="html"><![CDATA[往前一步， 拥抱不确定性！]]></title>
+    <title type="html"><![CDATA[开放式招聘系列（三）：全员招聘——面试]]></title>
+    <link href="http://yuyandong.com/interview_together.html"/>
+    <updated>2016-01-15T12:36:05+08:00</updated>
+    <id>http://yuyandong.com/interview_together.html</id>
+    <content type="html"><![CDATA[
+<blockquote>
+<p>招聘也是企业的一种销售——将企业“销售”给合适的候选人。</p>
+</blockquote>
+
+<p>求职者其实是公司潜在的客户，好的体验和坏的体验带来极不同的结果。</p>
+
+<p>我们来看两个对比：</p>
+
+<p>1）坏的招聘体验的影响，只是大部分的招聘人员未觉察或者不愿如此察觉。</p>
+
+<p>昨天看到一份<a href="http://www.recruitingblogs.com/profiles/blogs/5-facts-you-should-know-about-the-candidate-experience">数据</a>显示：</p>
+
+<blockquote>
+<p>有 58% 没有收到目标公司答复的应聘者，较少可能购买该公司产品；更惊人的是，面试后没有得到结果反馈的人中有65% 也有这样的倾向。</p>
+</blockquote>
+
+<p>因为没有看到这份数据的调查样本范围，而且来自一个提升招聘体验的公司员工。这份数据还要谨慎看待，不过它倒是提醒我们一个基本事实：没有人喜欢坏的面试体验。 </p>
+
+<p>2）好的招聘体验是什么效果呢？我们来看一份好的招聘体验带来的效果：</p>
+
+<blockquote>
+<p>In fact, 80% of people who have been interviewed and rejected report that they would still recommend a friend apply to Google. </p>
+</blockquote>
+
+<p>大意：<strong>谷歌面试过和拒绝过的候选人中有80% 的候选人还是会推荐他们的朋友应聘谷歌的职位。</strong></p>
+
+<p>谷歌还有一个实践分享，它说：</p>
+
+<blockquote>
+<p>Google wants interviewing to be part of every Googler’s job</p>
+</blockquote>
+
+<p>然后在文章中，它列出了谷歌招聘团队对面试官们的培训和支持的方法，以此达成让面试工作可以成为每一个谷歌人工作中的一部分。</p>
+
+<h3 id="toc_0">为什么全员面试</h3>
+
+<p>谷歌为什么这样做呢？它说了 2 个方面的原因：</p>
+
+<p>1）  相比公司职位与福利，候选人关更注与用人部门面试官的沟通</p>
+
+<blockquote>
+<p>谷歌内部调研显示，在招聘体验上，候选人提及最多的是他们与面试官的交流——对大部分候选人来说，这方面的重要性高于岗位类别、福利、也高于与招聘人员的交流；</p>
+</blockquote>
+
+<p>谷歌要更突出部门面试官在面试过程中的作用，不仅是因为候选人重视，也因为</p>
+
+<p>2）企业在面试中不仅能找到合适的候选人，还有助于巩固企业文化，有助于增进同事情谊，也还可以增强现有员工对公司的归属感比如当员工对面试决策能发表个人见解，能够增强团队成员的归属感。</p>
+
+<h2 id="toc_1">如何全员招聘？</h2>
+
+<p>谷歌继续分享了它们的<a href="https://rework.withgoogle.com/guides/hiring-train-your-interviewers/steps/introduction/">训练面试官的实践</a>，感兴趣的点击链接可见具体内容。</p>
+
+<p>在我看来，为了提升招聘体验和加快招聘效率，还有很多做法：</p>
+
+<ul>
+<li>Team 展示—— 团队成员、团队气氛 、团队间交流风格</li>
+<li>多成员一起参加面试，投入到面试环节——面试并一起做出录用决策；</li>
+<li>投入到新人 Onboarding（接待、指定同事指导 ）</li>
+<li>投入在试用环节</li>
+</ul>
+
+<p>以上是全员招聘的实践形式，范围其实很广。</p>
+
+<p>除此以外，我所说的全员招聘其组成部分还包括：内部招聘 + 内部推荐</p>
+
+<p># 欢迎联系与探讨 ，Arvin Yu 邮箱：<a href="mailto:yuyandong@outlook.com">yuyandong@outlook.com</a> #<br/>
+本作品采用 <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">知识共享署名-非商业性使用-禁止演绎 3.0 Unported许可协议</a> 进行许可。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[换个姿势 拥抱不确定]]></title>
     <link href="http://yuyandong.com/embrace_uncertainty.html"/>
     <updated>2016-01-22T21:39:29+08:00</updated>
     <id>http://yuyandong.com/embrace_uncertainty.html</id>
     <content type="html"><![CDATA[
 <blockquote>
-<p>2016年，新航道，你好！</p>
+<p>看不清未来的时候，有些东西曾经这样启动过。</p>
 </blockquote>
 
 <p>2015年中，摘抄了部分书的句子，当时发在微博中，没打算发文，今天看笔记，看到它们<br/>
@@ -30,7 +107,7 @@
 <h2 id="toc_0">模糊不确定时——这样行动</h2>
 
 <ul>
-<li>丹尼尔.丹尼特&lt;第三种文化&gt;</li>
+<li>丹尼尔.丹尼特&lt;第三种文化&gt; </li>
 </ul>
 
 <blockquote>
