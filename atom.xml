@@ -4,7 +4,7 @@
   <title><![CDATA[ Arvin Yu . 开放式面试|招聘]]></title>
   <link href="http://yuyandong.com/atom.xml" rel="self"/>
   <link href="http://yuyandong.com/"/>
-  <updated>2016-01-24T23:33:28+08:00</updated>
+  <updated>2016-01-24T23:34:17+08:00</updated>
   <id>http://yuyandong.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -563,7 +563,7 @@ WOOP，是德国汉堡大学心理学家彼得 · 戈尔维策（Peter Gollwitze
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[WOOP 不一样]]></title>
+    <title type="html"><![CDATA[WOOP 向新行动]]></title>
     <link href="http://yuyandong.com/for_wooper.html"/>
     <updated>2016-01-10T19:06:20+08:00</updated>
     <id>http://yuyandong.com/for_wooper.html</id>
@@ -1069,9 +1069,9 @@ c) 产量收入至少每个月增加： 30 天X15 万/天=450 万元 ；
   
   <entry>
     <title type="html"><![CDATA[意外]]></title>
-    <link href="http://yuyandong.com/14488547267938.html"/>
+    <link href="http://yuyandong.com/accident.html"/>
     <updated>2015-11-30T11:38:46+08:00</updated>
-    <id>http://yuyandong.com/14488547267938.html</id>
+    <id>http://yuyandong.com/accident.html</id>
     <content type="html"><![CDATA[
 <p>意外，它不是个调皮的孩子，而正是不确定的世界的表现。</p>
 
@@ -1112,9 +1112,9 @@ c) 产量收入至少每个月增加： 30 天X15 万/天=450 万元 ；
   
   <entry>
     <title type="html"><![CDATA[改用双拼输入法的记录]]></title>
-    <link href="http://yuyandong.com/14487770082898.html"/>
+    <link href="http://yuyandong.com/double-spell.html"/>
     <updated>2015-11-29T14:03:28+08:00</updated>
-    <id>http://yuyandong.com/14487770082898.html</id>
+    <id>http://yuyandong.com/double-spell.html</id>
     <content type="html"><![CDATA[
 <blockquote>
 <p>一些缘由、效果和参考资料</p>
@@ -1181,9 +1181,9 @@ c) 产量收入至少每个月增加： 30 天X15 万/天=450 万元 ；
   
   <entry>
     <title type="html"><![CDATA[Workflowy 样式更改小记]]></title>
-    <link href="http://yuyandong.com/14486029516788.html"/>
+    <link href="http://yuyandong.com/new-workflowy-style.html"/>
     <updated>2015-11-27T13:42:31+08:00</updated>
-    <id>http://yuyandong.com/14486029516788.html</id>
+    <id>http://yuyandong.com/new-workflowy-style.html</id>
     <content type="html"><![CDATA[
 <ul>
 <li>安装扩展 <code>Stylish</code> </li>
@@ -1318,9 +1318,9 @@ span.contentMatch {
   
   <entry>
     <title type="html"><![CDATA[更新 blog 文件后，清晰、快速同步到 github]]></title>
-    <link href="http://yuyandong.com/MWeb%E4%B8%8Egithub%E5%8F%91%E5%B8%83.html"/>
+    <link href="http://yuyandong.com/update-blog.html"/>
     <updated>2015-11-18T15:30:57+08:00</updated>
-    <id>http://yuyandong.com/MWeb%E4%B8%8Egithub%E5%8F%91%E5%B8%83.html</id>
+    <id>http://yuyandong.com/update-blog.html</id>
     <content type="html"><![CDATA[
 <p>因为使用MWeb管理博客，基本上任一处改动，它都需要重新打包文件生成网页。<br/>
 （一次改动就涉及多个文件，它没有将改动直接同步到github的功能。）</p>
@@ -1394,9 +1394,9 @@ To git@github.com:yuyandong/yuyandong.github.io.git
   
   <entry>
     <title type="html"><![CDATA[HTML 5 学习记录 --「图片滑动墙」]]></title>
-    <link href="http://yuyandong.com/14477677420859.html"/>
+    <link href="http://yuyandong.com/slide-picture.html"/>
     <updated>2015-11-17T21:42:22+08:00</updated>
-    <id>http://yuyandong.com/14477677420859.html</id>
+    <id>http://yuyandong.com/slide-picture.html</id>
     <content type="html"><![CDATA[
 <p>比如基于<code>Foundation</code>创建的该博客主题里，有一个比较有趣的滑动图片效果：</p>
 
@@ -1436,9 +1436,9 @@ To git@github.com:yuyandong/yuyandong.github.io.git
   
   <entry>
     <title type="html"><![CDATA[入门]]></title>
-    <link href="http://yuyandong.com/14477519570037.html"/>
+    <link href="http://yuyandong.com/introduction.html"/>
     <updated>2015-11-17T17:19:17+08:00</updated>
-    <id>http://yuyandong.com/14477519570037.html</id>
+    <id>http://yuyandong.com/introduction.html</id>
     <content type="html"><![CDATA[
 <blockquote>
 <p>入门，递上才；</p>
@@ -1498,9 +1498,9 @@ To git@github.com:yuyandong/yuyandong.github.io.git
   
   <entry>
     <title type="html"><![CDATA[把关]]></title>
-    <link href="http://yuyandong.com/14477491132970.html"/>
+    <link href="http://yuyandong.com/check.html"/>
     <updated>2015-11-17T16:31:53+08:00</updated>
-    <id>http://yuyandong.com/14477491132970.html</id>
+    <id>http://yuyandong.com/check.html</id>
     <content type="html"><![CDATA[
 <blockquote>
 <p>我心里有数，如果这里说的不参进一些其他的东西，让它多少有些故事、戏剧的成份，有人看见了会不高兴的。</p>
