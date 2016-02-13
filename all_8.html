@@ -94,6 +94,177 @@
 		<div class="markdown-body home-categories">
 		
 			<div class="article">
+                <a class="clearlink" href="new-workflowy-style.html">
+                
+                  <h1>技能新法：Workflowy 样式更改小记</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<ul>
+<li>安装扩展 <code>Stylish</code> </li>
+<li>为域名<code>Workflowy.com</code>创建 CSS 样式；</li>
+<li>然后导入下面的<code>效果代码</code>内的代码；</li>
+<li>修改为自己的图片网址；</li>
+</ul>
+
+<h3 id="toc_0">效果图</h3>
+
+<ul class="example-orbit" data-orbit>
+  <li>
+    <img src="media/14486029516788/14486044148070.jpg" alt="" />
+    <div class="orbit-caption"> 实例 1 </div>
+  </li>
+  <li>
+    <img src="media/14486029516788/14486052684903.jpg" alt="" />
+    <div class="orbit-caption"> 实例 2 </div>
+  </li>
+</ul>
+
+<h3 id="toc_1">背景图片</h3>
+
+<p><a href="https://images.unsplash.com/photo-1437419764061-2473afe69fc2?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;s=76fba3bdb1e04cb26a02000be2fe7740">实例 2 的背景图地址</a><br/>
+实例 1 背景图来自软件 OmmWriter</p>
+
+<h3 id="toc_2">效果代码</h3>
+
+<p>修改自以下两个样式：<br/>
+<a href="https://freestyler.ws/style/115618">Relaxing workflowy</a><br/>
+<a href="https://freestyler.ws/style/111688">Wunderflow</a></p>
+
+<pre><code>#bottomLinks {
+    display: none;
+}        
+#backgroundImage {
+    background: url(http://此处使用你的图片地址即可);  
+    background-size: 100% 100%; /*原图大小*/
+}
+.corner, .edge {
+    background: transparent;
+}
+div.page {
+    opacity: 0.85;
+}
+div.getMoreSpaceButton.hoverHand {
+    display: none;
+}
+img.proPitch {
+    display: none;
+}
+#header, #keyboardShortcutHelper {
+    -webkit-transition: opacity .2s;
+    opacity: 0;
+}
+
+#header:hover, #keyboardShortcutHelper:hover {
+    -webkit-transition: opacity .2s;
+    opacity: 1;
+}
+
+#pageContainer {
+    height: auto;
+}
+
+#share_buttons {
+    display: none;
+}
+
+#visible {
+    background: transparent ;
+    margin-top: 0;
+    padding-top: 0;
+    width: 400px;
+}
+
+#workflowy *, .editor textarea {
+    font-family: &quot;American Typewriter&quot; ;
+    font-size: 16px;
+    font-weight: normal;
+    text-shadow: rgba(255,255,255,.5) 1px 1px;
+}
+
+.bullet {
+    text-indent: 4px;
+}
+
+.top,.right,.bottom,.left {
+    display: none;
+}
+
+body {
+    background: none;
+    font-family: clearSans;
+    font-size: 1.05em;
+}
+
+div.content, .saveButton, .showCompletedButton, #buttonBar, #helpButton, #searchBox, #savedViewHUD {
+    font-family: Pt sans;
+    font-weight: normal;
+}
+
+div.footer {
+    display: none;
+}
+
+div.mainTreeRoot.project.open.selected {
+    height: auto;
+}
+
+div.page.active {
+    border-style: none;
+    height: auto;
+    padding-bottom: 75px;
+}
+
+div.pageStar {
+    display: none;
+}
+
+span.contentMatch {
+    background-color: #FFFFFF;
+}
+
+
+
+
+
+
+------
+欢迎联系 Arvin Yu , 邮箱：yuyandong@outlook.com  
+或长按以下二维码关注 公众号： 稻田无忧
+![qrcode_for_gh_2071c1a5ea94_430](media/14544127392119/qrcode_for_gh_2071c1a5ea94_430.jpg)
+
+本作品采用 [知识共享署名-非商业性使用-禁止演绎 3.0 Unported许可协议](http://creativecommons.org/licenses/by-nc-nd/3.0/) 进行许可。
+
+
+</code></pre>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2015/11/27</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='IT.html'>技能新法</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="http://yuyandong.com/new-workflowy-style.html#disqus_thread">comments</a>
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
                 <a class="clearlink" href="update-blog.html">
                 
                   <h1>技能新法：更新 blog 文件后，清晰、快速同步到 github</h1>
@@ -199,80 +370,6 @@ To git@github.com:yuyandong/yuyandong.github.io.git
                 </div>
               </div><!-- article -->
         
-			<div class="article">
-                <a class="clearlink" href="slide-picture.html">
-                
-                  <div class="f-img"><img src=" " /></div>
-                
-                  <h1>技能新法：HTML 5 学习记录 --「图片滑动墙」</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>比如基于<code>Foundation</code>创建的该博客主题里，有一个比较有趣的滑动图片效果：</p>
-
-<ul class="example-orbit" data-orbit>
- 
-
-  <li>
-    <img src="media/14477677420859/IMG_0461.jpg" alt="" />
-    <div class="orbit-caption"> 图 1</div>
-  </li>
-  <li>
-    <img src="media/14477677420859/IMG_0491.jpg" alt="" />
-    <div class="orbit-caption"> 图 2</div>
-  </li>
-</ul>
-
-<p>通过查看以下HTML 代码，应该是该主题在 CSS中 通过<code>div</code> 标记的 <code>class=&quot;orbit-caption&quot;</code>对2个图片采用同一个设定，实现图片滑动功能。</p>
-
-<pre><code>&lt;ul class=&quot;example-orbit&quot; data-orbit&gt;
- 
-
-  &lt;li&gt;
-    &lt;img src=&quot;media/14477677420859/IMG_0461.jpg&quot; alt=&quot;&quot; /&gt;
-    &lt;div class=&quot;orbit-caption&quot;&gt; 图 1&lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;img src=&quot;media/14477677420859/IMG_0491.jpg&quot; alt=&quot;&quot; /&gt;
-    &lt;div class=&quot;orbit-caption&quot;&gt; 图 2&lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
-
-<p>当然来自 <a href="http://foundation.zurb.com/docs/components/orbit.html">Foundation</a> 官方的信息，<code>Orbit</code> 将由拥有更多功能的<a href="http://kenwheeler.github.io/slick/">Slick Carousel</a> 取代</p>
-
-<hr/>
-
-<p>欢迎联系 Arvin Yu , 邮箱：<a href="mailto:yuyandong@outlook.com">yuyandong@outlook.com</a>  </p>
-
-<p>本作品采用 <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">知识共享署名-非商业性使用-禁止演绎 3.0 Unported许可协议</a> 进行许可。</p>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2015/11/17</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='IT.html'>技能新法</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="http://yuyandong.com/slide-picture.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
               
 
 
@@ -345,6 +442,12 @@ To git@github.com:yuyandong/yuyandong.github.io.git
 	      
 		      
 			      <li class="post">
+			        <a href="14553325891591.html">面试体验：面试也甜美</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="find-new-career-path.html">职业发展：新年了，你还在为跑道纠结吗?</a>
 			      </li>
 		     
@@ -364,12 +467,6 @@ To git@github.com:yuyandong/yuyandong.github.io.git
 		      
 			      <li class="post">
 			        <a href="some-guide-for-interview.html">面试官：最小面试手册</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="understand-business.html">开放式招聘 007： 唯深入理解业务，才能到达远方</a>
 			      </li>
 		     
 		  
