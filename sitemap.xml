@@ -2,7 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
   <loc>http://yuyandong.com/</loc>
-  <lastmod>2016-03-21T18:31:10+08:00</lastmod>
+  <lastmod>2016-04-15T23:08:06+08:00</lastmod>
+</url>
+
+<url>
+  <loc>http://yuyandong.com/14607321868331.html</loc>
+  <lastmod>2016-04-15T22:56:26+08:00</lastmod>
 </url>
 
 <url>
@@ -143,11 +148,7 @@
 
 
 <url>
-  <loc>http://yuyandong.com/notes.html</loc>
-</url>
-
-<url>
-  <loc>http://yuyandong.com/executives.html</loc>
+  <loc>http://yuyandong.com/OpenRecruit.html</loc>
 </url>
 
 <url>
@@ -159,7 +160,11 @@
 </url>
 
 <url>
-  <loc>http://yuyandong.com/OpenRecruit.html</loc>
+  <loc>http://yuyandong.com/notes.html</loc>
+</url>
+
+<url>
+  <loc>http://yuyandong.com/executives.html</loc>
 </url>
 
 
