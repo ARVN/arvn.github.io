@@ -18,7 +18,13 @@
   <script src="asset/highlightjs/highlight.pack.js"></script>
   <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script>hljs.initHighlightingOnLoad();</script>
-
+<script type="text/javascript">
+  function before_search(){
+    var searchVal = 'site:yuyandong.com ' + document.getElementById('search_input').value;
+    document.getElementById('search_q').value = searchVal;
+    return true;
+  }
+</script>
   </head>
   <body class="antialiased hide-extras">
     
@@ -33,16 +39,18 @@
   <div class="row">
       <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
         <ul id="main-menu" class="left">
-        <li id="menu_item_index"><a href="index.html">HOME</a></li>
-        <li id="menu_item_archives"><a href="archives.html">ARCHIVES</a></li>
-        <li id="menu_item_about"><a href="about.html">ABOUT</a></li>
+        
+        <li id=""><a target="self" href="index.html">Home</a></li>
+        
+        <li id=""><a target="_self" href="archives.html">Archives</a></li>
+        
         </ul>
 
         <ul class="right" id="search-wrap">
           <li>
-<form target="_blank" action="http://www.google.com/search" method="get">
-    <input type="hidden" name="q" value="site:yuyandong.com">
-    <input tabindex="1" type="search" name="q"  placeholder="Search"/>
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
+    <input type="hidden" id="search_q" name="q" value="" />
+    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
 </form>
 </li>
           </ul>
@@ -62,7 +70,7 @@
       <ul class="off-canvas-list">
        
        <li><a href="index.html">HOME</a></li>
-    <li><a href="archives.html">ARCHIVE</a></li>
+    <li><a href="archives.html">Archives</a></li>
     <li><a href="about.html">ABOUT</a></li>
 
     <li><label>Categories</label></li>
@@ -86,6 +94,9 @@
 
 
         <section id="main-content" role="main" class="scroll-container">
+        
+       
+
  <script type="text/javascript">
   $(function(){
     $('#menu_item_index').addClass('is_active');
@@ -211,7 +222,7 @@
 
 <blockquote>
 <ul>
-<li>一方面, 心理对照不仅能提供执行意图发挥作用的重要前提 -- 强烈的目标承诺, 而且能帮助个体确认现实中的障碍, 为形成有效的 &quot;如果 -- 那么&quot; 计划奠定基础。</li>
+<li>一方面, 心理对照不仅能提供执行意图发挥作用的重要前提 &ndash; 强烈的目标承诺, 而且能帮助个体确认现实中的障碍, 为形成有效的 &ldquo;如果 &ndash; 那么&rdquo; 计划奠定基础。</li>
 <li>另一方面, 执行意图可以通过减少目标与行为之间的鸿沟增强心理对照的效果。研究表明心理对照与执行意图能有效地促进目标追寻。</li>
 </ul>
 </blockquote>
@@ -239,7 +250,7 @@
 定义：</p>
 
 <blockquote>
-<p>是将线索和目标定向的行为结合起来的 &quot;如果 - 那么&quot; 计划, 是目标执行阶段的策略, 能有效地将目标意图变为行动, 减少目标与行为之间的鸿沟。</p>
+<p>是将线索和目标定向的行为结合起来的 &ldquo;如果 - 那么&rdquo; 计划, 是目标执行阶段的策略, 能有效地将目标意图变为行动, 减少目标与行为之间的鸿沟。</p>
 
 <p>执行意图，指将情境线索与有效反应联系起来的 “如果 - 那么” 计划，其结构为 “如果情境 Y 出现，我就启动行为 Z 以达成目标 X”（戈尔维策 1999）。</p>
 </blockquote>
@@ -358,7 +369,7 @@
 <li>思考夹在你和美好结局之间的障碍</li>
 <li>列出一个好处，列出一个障碍，再来一个障碍，找出主要障碍！</li>
 </ul></li>
-<li>然后 “如果 xxx 「障碍情境」....，那么...xxx行动...”</li>
+<li>然后 “如果 xxx 「障碍情境」&hellip;.，那么&hellip;xxx行动&hellip;”</li>
 </ul>
 
 <h4 id="toc_11">注意事项</h4>
@@ -386,6 +397,9 @@
 <img src="media/14544127392119/qrcode_for_gh_2071c1a5ea94_430.jpg" alt="qrcode_for_gh_2071c1a5ea94_430"/></p>
 
 <p>本作品采用 <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">知识共享署名-非商业性使用-禁止演绎 3.0 Unported许可协议</a> 进行许可。</p>
+
+
+    
 
       </div>
 
@@ -467,12 +481,15 @@ var duoshuoQuery = {short_name:"arvinyu"};
 
 
 
-<a class="github" target="_blank" href="https://github.com/yuyandong" title="GitHub">GitHub</a>
+<a target="_blank" class="github" target="_blank" href="https://github.com/yuyandong" title="GitHub">GitHub</a>
 
-  <a class="rss" href="atom.xml" title="RSS">RSS</a>
+  <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
                 
               	 </div>
           	</div>
+
+             
+
               <div id="site-categories" class="side-item ">
                 <div class="side-header">
                   <h2>Categories</h2>
@@ -506,7 +523,7 @@ var duoshuoQuery = {short_name:"arvinyu"};
 	      
 		      
 			      <li class="post">
-			        <a href="my_memory_big_dream.html">贪婪的记忆如何是好</a>
+			        <a href="my_memory_big_dream.html">如果跳出记忆拥堵，你会如何？</a>
 			      </li>
 		     
 		  
@@ -626,7 +643,7 @@ s.src = '//' + disqus_shortname + '.disqus.com/count.js';
      
     </script>
 
-    <script src="asset/chart/all-min.js"></script><script type="text/javascript">$(function(){    var mwebii=0;    var mwebChartEleId = 'mweb-chart-ele-';    $('pre>code').each(function(){        mwebii++;        var eleiid = mwebChartEleId+mwebii;        if($(this).hasClass('language-sequence')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"><div>').insertAfter(ele);            ele.hide();            var diagram = Diagram.parse($(this).text());            diagram.drawSVG(eleiid,{theme: 'simple'});        }else if($(this).hasClass('language-flow')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"><div>').insertAfter(ele);            ele.hide();            var diagram = flowchart.parse($(this).text());            diagram.drawSVG(eleiid);        }    });});</script>
+    <script src="asset/chart/all-min.js"></script><script type="text/javascript">$(function(){    var mwebii=0;    var mwebChartEleId = 'mweb-chart-ele-';    $('pre>code').each(function(){        mwebii++;        var eleiid = mwebChartEleId+mwebii;        if($(this).hasClass('language-sequence')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"></div>').insertAfter(ele);            ele.hide();            var diagram = Diagram.parse($(this).text());            diagram.drawSVG(eleiid,{theme: 'simple'});        }else if($(this).hasClass('language-flow')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"></div>').insertAfter(ele);            ele.hide();            var diagram = flowchart.parse($(this).text());            diagram.drawSVG(eleiid);        }    });});</script>
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
 
 
