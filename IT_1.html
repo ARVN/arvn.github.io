@@ -107,159 +107,150 @@
 		<div class="markdown-body home-categories">
 		
 			<div class="article">
-                <a class="clearlink" href="update-blog.html">
+                <a class="clearlink" href="new-workflowy-style.html">
                 
-                  <h1>技能新法：更新 blog 文件后，清晰、快速同步到 github</h1>
+                  <h1>技能新法：Workflowy 样式更改小记</h1>
                   <div class="a-content">
                       
                       <div class="a-content-text">
                         
-                        	<p>因为使用MWeb管理博客，基本上任一处改动，它都需要重新打包文件生成网页。<br/>
-（一次改动就涉及多个文件，它没有将改动直接同步到github的功能。）</p>
-
-<ul>
-<li><p>文件夹里面哪些已经被它改动了，缺少清晰的提示。</p></li>
-<li><p>每次更改后，要全部本地文件都提交到远程仓库又不合理。</p></li>
-<li><p>那么有哪些git的命令能让我们更容易省事呢？</p></li>
+                        	<ul>
+<li>安装扩展 <code>Stylish</code> </li>
+<li>为域名<code>Workflowy.com</code>创建 CSS 样式；</li>
+<li>然后导入下面的<code>效果代码</code>内的代码；</li>
+<li>修改为自己的图片网址；</li>
 </ul>
 
-<p>换个思路，其实也方便清晰知道哪些文件被改动了，然后就快速了。</p>
-
-<h3 id="toc_0">我使用如下步骤完成：</h3>
-
-<ol>
-<li><p>使用 <code>git status</code>查看不同；</p></li>
-<li><p>使用<code>git commit -a</code> 唤出哪些漏掉了没有及时commit ，此时终端会自动打开编辑器<code>Vim</code>（Vi)，在里面完成编辑，<code>:wq</code> 退出 即可；</p></li>
-<li><p>使用 <code>git push origin master</code> 完成提交  </p></li>
-</ol>
-
-<h3 id="toc_1">本文改动后，实现过程的代码如下</h3>
-
-<pre><code>$; git status                                    2.2.1p85
-On branch master
-Your branch is up-to-date with &#39;origin/master&#39;.
-Changes not staged for commit:
-  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
- 21
- 20 # Please enter the commit message for your changes. Lines starting
- 19 # with &#39;#&#39; will be ignored, and an empty message aborts the commit.
- 18 # On branch master
- 17 # Your branch is up-to-date with &#39;origin/master&#39;.
- 16 #
- 15 # Changes to be committed:
- 14         modified:   14477276500009.html
- 13         modified:   14477491132970.html
- 12         modified:   14477519570037.html
- 11         modified:   14477677420859.html
- 10         modified:   all.html
-  9         modified:   archives.html
-  8         modified:   atom.xml
-  7         modified:   index.html
-  6         modified:   sitemap.xml
-  5         modified:   猫技术.html
-  4         modified:   聘方.html
-  3 #
-  2 # Untracked files:
-  1         MWeb与github发布.html
-22  #
-~
- NORMAL ▶ ⎇ master ▶ .git/COMMIT_EDITMSG[+]      ◀ gitcommit ◀◀ 100% ¶  22:  1
-&quot;.git/COMMIT_EDITMSG&quot; 22L, 588C [w]
-[master a11c890]    modified:   14477276500009.html     modified:   14477491132970.html     modified:   14477519570037.html     modified:   14477677420859.html     modified:   all.html    modified:   archives.html   modified:   atom.xml    modified:   index.html  modified:   sitemap.xml     modified:   猫技术.html    modified:   聘方.html     MWeb与github发布.html
- 11 files changed, 255 insertions(+), 2 deletions(-)
-
-ArvinYu at yandongdeMacBook-Pro in ~/git/ywriter/yuyandong.github.io  [A1u] [master]
-:$; git push origin master                        2.2.1p85
-Counting objects: 12, done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (12/12), done.
-Writing objects: 100% (12/12), 4.02 KiB | 0 bytes/s, done.
-Total 12 (delta 10), reused 0 (delta 0)
-To git@github.com:yuyandong/yuyandong.github.io.git
-   e517174..a11c890  master -&gt; master
-
-
-</code></pre>
-
-<hr/>
-
-<p>欢迎联系 Arvin Yu , 邮箱：<a href="mailto:yuyandong@outlook.com">yuyandong@outlook.com</a>  </p>
-
-<p>本作品采用 <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">知识共享署名-非商业性使用-禁止演绎 3.0 Unported许可协议</a> 进行许可。</p>
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                  
-                    <span class="date">2015/11/18</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='IT.html'>技能新法</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-                        <a href="http://yuyandong.com/update-blog.html#disqus_thread">comments</a>
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="slide-picture.html">
-                
-                  <div class="f-img"><img src=" " /></div>
-                
-                  <h1>技能新法：HTML 5 学习记录 --「图片滑动墙」</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>比如基于<code>Foundation</code>创建的该博客主题里，有一个比较有趣的滑动图片效果：</p>
+<h3 id="toc_0">效果图</h3>
 
 <ul class="example-orbit" data-orbit>
- 
-
   <li>
-    <img src="media/14477677420859/IMG_0461.jpg" alt="" />
-    <div class="orbit-caption"> 图 1</div>
+    <img src="media/14486029516788/14486044148070.jpg" alt="" />
+    <div class="orbit-caption"> 实例 1 </div>
   </li>
   <li>
-    <img src="media/14477677420859/IMG_0491.jpg" alt="" />
-    <div class="orbit-caption"> 图 2</div>
+    <img src="media/14486029516788/14486052684903.jpg" alt="" />
+    <div class="orbit-caption"> 实例 2 </div>
   </li>
 </ul>
 
-<p>通过查看以下HTML 代码，应该是该主题在 CSS中 通过<code>div</code> 标记的 <code>class=&quot;orbit-caption&quot;</code>对2个图片采用同一个设定，实现图片滑动功能。</p>
+<h3 id="toc_1">背景图片</h3>
 
-<pre><code>&lt;ul class=&quot;example-orbit&quot; data-orbit&gt;
- 
+<p><a href="https://images.unsplash.com/photo-1437419764061-2473afe69fc2?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;s=76fba3bdb1e04cb26a02000be2fe7740">实例 2 的背景图地址</a><br/>
+实例 1 背景图来自软件 OmmWriter</p>
 
-  &lt;li&gt;
-    &lt;img src=&quot;media/14477677420859/IMG_0461.jpg&quot; alt=&quot;&quot; /&gt;
-    &lt;div class=&quot;orbit-caption&quot;&gt; 图 1&lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;img src=&quot;media/14477677420859/IMG_0491.jpg&quot; alt=&quot;&quot; /&gt;
-    &lt;div class=&quot;orbit-caption&quot;&gt; 图 2&lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+<h3 id="toc_2">效果代码</h3>
+
+<p>修改自以下两个样式：<br/>
+<a href="https://freestyler.ws/style/115618">Relaxing workflowy</a><br/>
+<a href="https://freestyler.ws/style/111688">Wunderflow</a></p>
+
+<pre><code>#bottomLinks {
+    display: none;
+}        
+#backgroundImage {
+    background: url(http://此处使用你的图片地址即可);  
+    background-size: 100% 100%; /*原图大小*/
+}
+.corner, .edge {
+    background: transparent;
+}
+div.page {
+    opacity: 0.85;
+}
+div.getMoreSpaceButton.hoverHand {
+    display: none;
+}
+img.proPitch {
+    display: none;
+}
+#header, #keyboardShortcutHelper {
+    -webkit-transition: opacity .2s;
+    opacity: 0;
+}
+
+#header:hover, #keyboardShortcutHelper:hover {
+    -webkit-transition: opacity .2s;
+    opacity: 1;
+}
+
+#pageContainer {
+    height: auto;
+}
+
+#share_buttons {
+    display: none;
+}
+
+#visible {
+    background: transparent ;
+    margin-top: 0;
+    padding-top: 0;
+    width: 400px;
+}
+
+#workflowy *, .editor textarea {
+    font-family: &quot;American Typewriter&quot; ;
+    font-size: 16px;
+    font-weight: normal;
+    text-shadow: rgba(255,255,255,.5) 1px 1px;
+}
+
+.bullet {
+    text-indent: 4px;
+}
+
+.top,.right,.bottom,.left {
+    display: none;
+}
+
+body {
+    background: none;
+    font-family: clearSans;
+    font-size: 1.05em;
+}
+
+div.content, .saveButton, .showCompletedButton, #buttonBar, #helpButton, #searchBox, #savedViewHUD {
+    font-family: Pt sans;
+    font-weight: normal;
+}
+
+div.footer {
+    display: none;
+}
+
+div.mainTreeRoot.project.open.selected {
+    height: auto;
+}
+
+div.page.active {
+    border-style: none;
+    height: auto;
+    padding-bottom: 75px;
+}
+
+div.pageStar {
+    display: none;
+}
+
+span.contentMatch {
+    background-color: #FFFFFF;
+}
+
+
+
+
+
+
+------
+欢迎联系 Arvin Yu , 邮箱：yuyandong@outlook.com  
+或长按以下二维码关注 公众号： 稻田无忧
+![qrcode_for_gh_2071c1a5ea94_430](media/14544127392119/qrcode_for_gh_2071c1a5ea94_430.jpg)
+
+本作品采用 [知识共享署名-非商业性使用-禁止演绎 3.0 Unported许可协议](http://creativecommons.org/licenses/by-nc-nd/3.0/) 进行许可。
+
+
 </code></pre>
-
-<p>当然来自 <a href="http://foundation.zurb.com/docs/components/orbit.html">Foundation</a> 官方的信息，<code>Orbit</code> 将由拥有更多功能的<a href="http://kenwheeler.github.io/slick/">Slick Carousel</a> 取代</p>
-
-<hr/>
-
-<p>欢迎联系 Arvin Yu , 邮箱：<a href="mailto:yuyandong@outlook.com">yuyandong@outlook.com</a>  </p>
-
-<p>本作品采用 <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">知识共享署名-非商业性使用-禁止演绎 3.0 Unported许可协议</a> 进行许可。</p>
 
                         
                       </div>
@@ -268,7 +259,7 @@ To git@github.com:yuyandong/yuyandong.github.io.git
                 <div class="read-more clearfix">
                   <div class="more-left left">
                   
-                    <span class="date">2015/11/17</span>
+                    <span class="date">2015/11/27</span>
                     <span>posted in&nbsp;</span> 
           				  
           					    <span class="posted-in"><a href='IT.html'>技能新法</a></span>
@@ -277,7 +268,7 @@ To git@github.com:yuyandong/yuyandong.github.io.git
                   <div class="more-right right">
                   <span class="comments">
                       
-                        <a href="http://yuyandong.com/slide-picture.html#disqus_thread">comments</a>
+                        <a href="http://yuyandong.com/new-workflowy-style.html#disqus_thread">comments</a>
                       
 
                        
@@ -297,7 +288,7 @@ To git@github.com:yuyandong/yuyandong.github.io.git
 			  </div>
 			  <div class="large-6 columns">
 			<p class="text-right" style="padding-top:25px;">
-			
+			 <a href="IT_2.html">&raquo; Next Page</a> 
 			</p>
 			  </div>
 			</div>
@@ -363,6 +354,12 @@ To git@github.com:yuyandong/yuyandong.github.io.git
 	      
 		      
 			      <li class="post">
+			        <a href="15046754947718.html">创造者的天空</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="my_memory_big_dream.html">如果跳出记忆拥堵，你会如何？</a>
 			      </li>
 		     
@@ -382,12 +379,6 @@ To git@github.com:yuyandong/yuyandong.github.io.git
 		      
 			      <li class="post">
 			        <a href="1-case.html">批量招聘案例</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="house001.html">面试官: 豪斯医生 001</a>
 			      </li>
 		     
 		  
