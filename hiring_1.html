@@ -68,10 +68,11 @@
 
 <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-       
-       <li><a href="index.html">HOME</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="about.html">ABOUT</a></li>
+        
+        <li><a target="self" href="index.html">Home</a></li>
+        
+        <li><a target="_self" href="archives.html">Archives</a></li>
+        
 
     <li><label>Categories</label></li>
 
@@ -142,7 +143,7 @@
 <ul>
 <li>首先从招聘流程入手，和采伐部门讨论他们对新机械操作手的招聘需求（特别是机器到港口的时间），评估和确定了每一培训班次的入职时间，确保在该时间节点完成该班次 8 位新人入职；</li>
 <li>并定制流程节点，加快招聘速度：比如：在新招聘需求的审批，文件提交走的过程中，提前展开招聘方案并大力地实施（广告发布、 甄选、入职安排 ）；</li>
-<li>当然还有招募的方式和面试的方式的诸多调整（一上午面试10-15人），比如带候选人到林地参观……
+<li>当然还有招募的方式和面试的方式的诸多调整（一上午面试10-15人），比如带候选人到林地参观……<br/>
 省略招聘体验方面的流程</li>
 </ul>
 </blockquote>
@@ -151,7 +152,7 @@
 
 <p>招聘每个月为公司增进了几百万元的产量。</p>
 
-<pre><code>a) 12 年有 2 个招聘经理 + 1 个招聘助理负责该项目，14 年到我接手后， 由我 1 人负责； 
+<pre><code class="language-text">a) 12 年有 2 个招聘经理 + 1 个招聘助理负责该项目，14 年到我接手后， 由我 1 人负责； 
 b) 招聘周期从2 个月完成 --&gt; 1 个月--&gt; 2 周完成；
 c) 产量收入至少每个月增加： 30 天X15 万/天=450 万元 ； 
 
@@ -277,6 +278,12 @@ c) 产量收入至少每个月增加： 30 天X15 万/天=450 万元 ；
 	      
 		      
 			      <li class="post">
+			        <a href="15054546901222.html">企业招聘解说</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="15046754947718.html">创造者的天空</a>
 			      </li>
 		     
@@ -296,12 +303,6 @@ c) 产量收入至少每个月增加： 30 天X15 万/天=450 万元 ；
 		      
 			      <li class="post">
 			        <a href="surrounding_with_best.html">站好位置，发掘高管</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="1-case.html">批量招聘案例</a>
 			      </li>
 		     
 		  
@@ -397,7 +398,7 @@ s.src = '//' + disqus_shortname + '.disqus.com/count.js';
      
     </script>
 
-    <script src="asset/chart/all-min.js"></script><script type="text/javascript">$(function(){    var mwebii=0;    var mwebChartEleId = 'mweb-chart-ele-';    $('pre>code').each(function(){        mwebii++;        var eleiid = mwebChartEleId+mwebii;        if($(this).hasClass('language-sequence')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"></div>').insertAfter(ele);            ele.hide();            var diagram = Diagram.parse($(this).text());            diagram.drawSVG(eleiid,{theme: 'simple'});        }else if($(this).hasClass('language-flow')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"></div>').insertAfter(ele);            ele.hide();            var diagram = flowchart.parse($(this).text());            diagram.drawSVG(eleiid);        }    });});</script>
+    
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
 
 

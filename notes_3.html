@@ -68,10 +68,11 @@
 
 <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-       
-       <li><a href="index.html">HOME</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="about.html">ABOUT</a></li>
+        
+        <li><a target="self" href="index.html">Home</a></li>
+        
+        <li><a target="_self" href="archives.html">Archives</a></li>
+        
 
     <li><label>Categories</label></li>
 
@@ -288,7 +289,7 @@
 <ul>
 <li>什么是可控的呢？</li>
 <li>什么是外在的呢？</li>
-<li>什么又是具体的呢？
+<li>什么又是具体的呢？<br/>
 你问我那么多问题，我一时答不上来，对我现在讲着来说 怎么回答你好呢？不算具体的障碍，</li>
 <li>注重锻炼 if 中 的成份中的<strong>情境线索</strong>的辨别能力</li>
 </ul>
@@ -320,7 +321,7 @@
 2)  具体想象实现这个目标或愿望的最好结果 （如感觉很自豪 很棒）；同样花点时间写下来；<br/>
 3)  具体想象现实生活中阻碍实现这个目标或愿望的障碍（拦路虎），比如，急于求成，想放弃； 4)  想想这些具体的拦路虎会在什么时候在哪里出现。具体是哪些情境因素成为了你的障碍，  越具体详细越好；比如：</p>
 
-<pre><code>她认为通过记忆的测试很难。
+<pre><code class="language-text">她认为通过记忆的测试很难。
 那么就可以考虑了：我是在何时（白天还是晚上）、哪个地方（家里还是学校）不想记忆训练了？
 </code></pre>
 
@@ -330,7 +331,7 @@
 <p>应对计划是预测目标达成（尤其是会遇到困难的目标）的稳定因素。</p>
 </blockquote>
 
-<pre><code> 比如 或者遇到xx困难，那么我就找一个学员商量听听同伴的声音。
+<pre><code class="language-text"> 比如 或者遇到xx困难，那么我就找一个学员商量听听同伴的声音。
 </code></pre>
 
 <p>6)  计划的格式：如果我在xxx 拦路虎，那么我xxx行动<br/>
@@ -340,13 +341,11 @@
 
 <ul>
 <li>想象一个理想中的未来（比如改善个人健康行为），然后反思现在有哪些行为阻碍了你达到那个未来图景（比如遇到诱惑的时候就放弃锻炼）;
-
 <ul>
 <li>你觉得成功的概率有多大</li>
 <li>你该追求这个目标吗</li>
 </ul></li>
 <li>对比利益和障碍，你就能更加清楚地知道自己成功的把握有多大，对这个目标有多坚定了
-
 <ul>
 <li>这样子一个心理对照的过程就把那个你很希望实现的未来变成一种目标承诺；</li>
 <li>写下愿望和已经在做的事情</li>
@@ -366,7 +365,6 @@
 <li>完成woop 越认真越有利于目标达成；</li>
 <li>严格刻板的行动计划不利于目标的达成；</li>
 <li><p>不要想象太多的 Outcome 和 Obstacle , 有关键的[OO]即可：OO 两只眼，，</p>
-
 <blockquote>
 <p>预期过多的收获和过多的障碍都不利于目标达成，反而是消极效果，过多的障碍无法把精力放在主要障碍上，也会阻碍个体对期望实现的概率的判断、降低为此目标付出努力的积极性。</p>
 </blockquote></li>
@@ -485,6 +483,12 @@
 	      
 		      
 			      <li class="post">
+			        <a href="15054546901222.html">企业招聘解说</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="15046754947718.html">创造者的天空</a>
 			      </li>
 		     
@@ -504,12 +508,6 @@
 		      
 			      <li class="post">
 			        <a href="surrounding_with_best.html">站好位置，发掘高管</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="1-case.html">批量招聘案例</a>
 			      </li>
 		     
 		  
@@ -605,7 +603,7 @@ s.src = '//' + disqus_shortname + '.disqus.com/count.js';
      
     </script>
 
-    <script src="asset/chart/all-min.js"></script><script type="text/javascript">$(function(){    var mwebii=0;    var mwebChartEleId = 'mweb-chart-ele-';    $('pre>code').each(function(){        mwebii++;        var eleiid = mwebChartEleId+mwebii;        if($(this).hasClass('language-sequence')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"></div>').insertAfter(ele);            ele.hide();            var diagram = Diagram.parse($(this).text());            diagram.drawSVG(eleiid,{theme: 'simple'});        }else if($(this).hasClass('language-flow')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"></div>').insertAfter(ele);            ele.hide();            var diagram = flowchart.parse($(this).text());            diagram.drawSVG(eleiid);        }    });});</script>
+    
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
 
 

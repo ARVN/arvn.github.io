@@ -1,0 +1,20 @@
+{
+    "/asset/robots.txt": {
+        "url": "", 
+        "path": "/asset/robots.txt", 
+        "_title": "robots", 
+        "title": "robots\n/asset/robots.txt"
+    }, 
+    "/README.md": {
+        "url": "", 
+        "path": "/README.md", 
+        "_title": "README", 
+        "title": "README\n/README.md"
+    }, 
+    "/asset/humans.txt": {
+        "url": "", 
+        "path": "/asset/humans.txt", 
+        "_title": "humans", 
+        "title": "humans\n/asset/humans.txt"
+    }
+}

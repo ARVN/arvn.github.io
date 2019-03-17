@@ -8,7 +8,7 @@
    Arvin Yu 的个人网站
   
   </title>
-  <meta name="keywords" content="招聘 面试 素质模型 找工作 职场" />
+  
   
   <link href="atom.xml" rel="alternate" title=" Arvin Yu 的个人网站" type="application/atom+xml">
     <link rel="stylesheet" href="asset/css/foundation.min.css" />
@@ -68,10 +68,11 @@
 
 <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-       
-       <li><a href="index.html">HOME</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="about.html">ABOUT</a></li>
+        
+        <li><a target="self" href="index.html">Home</a></li>
+        
+        <li><a target="_self" href="archives.html">Archives</a></li>
+        
 
     <li><label>Categories</label></li>
 
@@ -107,65 +108,85 @@
 		<div class="markdown-body home-categories">
 		
 			<div class="article">
-                <a class="clearlink" href="introduction.html">
+                <a class="clearlink" href="update-blog.html">
                 
-                  <h1>入门</h1>
+                  <h1>技能新法：更新 blog 文件后，清晰、快速同步到 github</h1>
                   <div class="a-content">
                       
                       <div class="a-content-text">
                         
-                        	<blockquote>
-<p>入门，递上才；</p>
-</blockquote>
+                        	<p>因为使用MWeb管理博客，基本上任一处改动，它都需要重新打包文件生成网页。<br/>
+（一次改动就涉及多个文件，它没有将改动直接同步到github的功能。）</p>
 
-<p>不管是书面材料，比如 简历、获奖证书。<br/>
-有一个东西提过去，带别的过去也行，总之都是脸面的符号。<br/>
-。。。<br/>
-擦亮眼睛，<br/>
-。。<br/>
-才不外露<br/>
-。。。</p>
+<ul>
+<li><p>文件夹里面哪些已经被它改动了，缺少清晰的提示。</p></li>
+<li><p>每次更改后，要全部本地文件都提交到远程仓库又不合理。</p></li>
+<li><p>那么有哪些git的命令能让我们更容易省事呢？</p></li>
+</ul>
 
-<h2 id="toc_0">这个才如何看呢？</h2>
+<p>换个思路，其实也方便清晰知道哪些文件被改动了，然后就快速了。</p>
 
-<p>。。。。<br/>
-。。。。<br/>
-。。。。</p>
+<h3 id="toc_0">我使用如下步骤完成：</h3>
 
-<h3 id="toc_1">素质模型的来历</h3>
+<ol>
+<li><p>使用 <code>git status</code>查看不同；</p></li>
+<li><p>使用<code>git commit -a</code> 唤出哪些漏掉了没有及时commit ，此时终端会自动打开编辑器<code>Vim</code>（Vi)，在里面完成编辑，<code>:wq</code> 退出 即可；</p></li>
+<li><p>使用 <code>git push origin master</code> 完成提交  </p></li>
+</ol>
 
-<p>不得不提前面没讲的模型了。</p>
+<h3 id="toc_1">本文改动后，实现过程的代码如下</h3>
 
-<p>戴维.麦克考兰 在 1973年发表的文章《测试能力特质而非“智力”》中提出要测试员工，特别是管理者的性格或技能，这些性格或技能能够区分绩效优劣。<br/>
-把工作分解成各种能力，开始寻找兼具智力、技能和其他相关特质的求职者。<br/>
-我们来看看人事决策的阶段；<br/>
-亿康先达公司全球人才寻访机构的负责人 费洛迪最近有一本书引入国内，书中费洛迪将人事决策分为四个时期<br/>
-第一时期强调身体；<br/>
-第二时期强调 智商、经验和业绩；<br/>
-第三时期强调素质特质<br/>
-第四时期强调潜力<br/>
-其实是优先考虑的能力，第一时期是优先考虑身体的时期；第二时期是优先考虑智商、经验和业绩的时期，第三个时期是优先考虑特质的时期，第四个时期当下是优先考虑潜力的时期；<br/>
-因为并不表示考虑特质的时候不考虑智力经验业绩和身体，也不是只考虑包含了成长能力和适应能力等因素的潜力，而忽视特质、智力、身体条件等因素；</p>
+<pre><code class="language-text">$; git status                                    2.2.1p85
+On branch master
+Your branch is up-to-date with &#39;origin/master&#39;.
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+ 21
+ 20 # Please enter the commit message for your changes. Lines starting
+ 19 # with &#39;#&#39; will be ignored, and an empty message aborts the commit.
+ 18 # On branch master
+ 17 # Your branch is up-to-date with &#39;origin/master&#39;.
+ 16 #
+ 15 # Changes to be committed:
+ 14         modified:   14477276500009.html
+ 13         modified:   14477491132970.html
+ 12         modified:   14477519570037.html
+ 11         modified:   14477677420859.html
+ 10         modified:   all.html
+  9         modified:   archives.html
+  8         modified:   atom.xml
+  7         modified:   index.html
+  6         modified:   sitemap.xml
+  5         modified:   猫技术.html
+  4         modified:   聘方.html
+  3 #
+  2 # Untracked files:
+  1         MWeb与github发布.html
+22  #
+~
+ NORMAL ▶ ⎇ master ▶ .git/COMMIT_EDITMSG[+]      ◀ gitcommit ◀◀ 100% ¶  22:  1
+&quot;.git/COMMIT_EDITMSG&quot; 22L, 588C [w]
+[master a11c890]    modified:   14477276500009.html     modified:   14477491132970.html     modified:   14477519570037.html     modified:   14477677420859.html     modified:   all.html    modified:   archives.html   modified:   atom.xml    modified:   index.html  modified:   sitemap.xml     modified:   猫技术.html    modified:   聘方.html     MWeb与github发布.html
+ 11 files changed, 255 insertions(+), 2 deletions(-)
 
-<p>麦克考兰的素质模型考察推动了的第三个时期的到来。</p>
+ArvinYu at yandongdeMacBook-Pro in ~/git/ywriter/yuyandong.github.io  [A1u] [master]
+:$; git push origin master                        2.2.1p85
+Counting objects: 12, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 4.02 KiB | 0 bytes/s, done.
+Total 12 (delta 10), reused 0 (delta 0)
+To git@github.com:yuyandong/yuyandong.github.io.git
+   e517174..a11c890  master -&gt; master
 
-<p>是优先考虑哪个能力作<br/>
-。。。。</p>
 
-<blockquote>
-<p>成功取决于个体设定的期望水平既有一定的高度但又没有超出“他们的能力范围”</p>
-</blockquote>
+</code></pre>
 
-<p>个体通常采用了错误的方式，从过去的表现来评估个人的目标设定。 </p>
+<hr/>
 
-<p>。。。。</p>
+<p>欢迎联系 Arvin Yu , 邮箱：<a href="mailto:yuyandong@outlook.com">yuyandong@outlook.com</a>  </p>
 
-<h3 id="toc_2">模型的数量和质量</h3>
-
-<p>怕是<strong>素质模型</strong>也看不过来的，不过多少先以此来做工作，<br/>
- 。。。。。</p>
-
-<p>#脉络# 未完待续</p>
+<p>本作品采用 <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">知识共享署名-非商业性使用-禁止演绎 3.0 Unported许可协议</a> 进行许可。</p>
 
                         
                       </div>
@@ -174,16 +195,16 @@
                 <div class="read-more clearfix">
                   <div class="more-left left">
                   
-                    <span class="date">2015/11/17</span>
+                    <span class="date">2015/11/18</span>
                     <span>posted in&nbsp;</span> 
           				  
-          					    <span class="posted-in"><a href='hiring.html'>「聘方」小品</a></span>
+          					    <span class="posted-in"><a href='IT.html'>技能新法</a></span>
           				   
                   </div>
                   <div class="more-right right">
                   <span class="comments">
                       
-                        <a href="http://yuyandong.com/introduction.html#disqus_thread">comments</a>
+                        <a href="http://yuyandong.com/update-blog.html#disqus_thread">comments</a>
                       
 
                        
@@ -269,6 +290,12 @@
 	      
 		      
 			      <li class="post">
+			        <a href="15054546901222.html">企业招聘解说</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="15046754947718.html">创造者的天空</a>
 			      </li>
 		     
@@ -288,12 +315,6 @@
 		      
 			      <li class="post">
 			        <a href="surrounding_with_best.html">站好位置，发掘高管</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="1-case.html">批量招聘案例</a>
 			      </li>
 		     
 		  
@@ -389,7 +410,7 @@ s.src = '//' + disqus_shortname + '.disqus.com/count.js';
      
     </script>
 
-    <script src="asset/chart/all-min.js"></script><script type="text/javascript">$(function(){    var mwebii=0;    var mwebChartEleId = 'mweb-chart-ele-';    $('pre>code').each(function(){        mwebii++;        var eleiid = mwebChartEleId+mwebii;        if($(this).hasClass('language-sequence')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"></div>').insertAfter(ele);            ele.hide();            var diagram = Diagram.parse($(this).text());            diagram.drawSVG(eleiid,{theme: 'simple'});        }else if($(this).hasClass('language-flow')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"></div>').insertAfter(ele);            ele.hide();            var diagram = flowchart.parse($(this).text());            diagram.drawSVG(eleiid);        }    });});</script>
+    
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
 
 
