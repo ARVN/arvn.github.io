@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  笔记添枝 -  Arvin Yu 的个人网站
+   Arvin Yu 的个人网站
   
   </title>
   
@@ -108,34 +108,85 @@
 		<div class="markdown-body home-categories">
 		
 			<div class="article">
-                <a class="clearlink" href="15797025486516.html">
+                <a class="clearlink" href="update-blog.html">
                 
-                  <h1>事上磨练. 一解</h1>
+                  <h1>技能新法：更新 blog 文件后，清晰、快速同步到 github</h1>
                   <div class="a-content">
                       
                       <div class="a-content-text">
                         
-                        	<p>在旷世奇才西蒙眼中，世界就是一座有着多个房间和无数分岔口的城堡。「经过这个花园或者在城堡中移动，在百转千折中经历人生的意外和惊喜。」</p>
+                        	<p>因为使用MWeb管理博客，基本上任一处改动，它都需要重新打包文件生成网页。<br/>
+（一次改动就涉及多个文件，它没有将改动直接同步到github的功能。）</p>
 
-<p>对他来说，人生就是一场探索，无尽的迷宫中探索；而对于其中太多太多的杂乱无章的问题，他乐意用启发式搜索，这能给他带来意想不到的结果。</p>
+<ul>
+<li><p>文件夹里面哪些已经被它改动了，缺少清晰的提示。</p></li>
+<li><p>每次更改后，要全部本地文件都提交到远程仓库又不合理。</p></li>
+<li><p>那么有哪些git的命令能让我们更容易省事呢？</p></li>
+</ul>
 
-<p><img src="media/15797025486516/15797025774830.jpg" alt="" style="width:414px;"/></p>
+<p>换个思路，其实也方便清晰知道哪些文件被改动了，然后就快速了。</p>
 
-<p>经得住事，事上磨练，对应现代，可以用心流来理解。（待插入心流相关说明）</p>
+<h3 id="toc_0">我使用如下步骤完成：</h3>
 
-<p>而通往心流的道路，实践可能路径很多</p>
+<ol>
+<li><p>使用 <code>git status</code>查看不同；</p></li>
+<li><p>使用<code>git commit -a</code> 唤出哪些漏掉了没有及时commit ，此时终端会自动打开编辑器<code>Vim</code>（Vi)，在里面完成编辑，<code>:wq</code> 退出 即可；</p></li>
+<li><p>使用 <code>git push origin master</code> 完成提交  </p></li>
+</ol>
 
-<p>心理学教授丹内特喜欢钓鱼，一些建议微小但很有趣。仔细想想又可作为人生教义。比如怎么个不浪费生命呢？有点耐心，不断制造/获取新鲜经验。</p>
+<h3 id="toc_1">本文改动后，实现过程的代码如下</h3>
 
-<p><img src="media/15797025486516/15797025774518.jpg" alt="" style="width:414px;"/></p>
+<pre><code class="language-text">$; git status                                    2.2.1p85
+On branch master
+Your branch is up-to-date with &#39;origin/master&#39;.
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+ 21
+ 20 # Please enter the commit message for your changes. Lines starting
+ 19 # with &#39;#&#39; will be ignored, and an empty message aborts the commit.
+ 18 # On branch master
+ 17 # Your branch is up-to-date with &#39;origin/master&#39;.
+ 16 #
+ 15 # Changes to be committed:
+ 14         modified:   14477276500009.html
+ 13         modified:   14477491132970.html
+ 12         modified:   14477519570037.html
+ 11         modified:   14477677420859.html
+ 10         modified:   all.html
+  9         modified:   archives.html
+  8         modified:   atom.xml
+  7         modified:   index.html
+  6         modified:   sitemap.xml
+  5         modified:   猫技术.html
+  4         modified:   聘方.html
+  3 #
+  2 # Untracked files:
+  1         MWeb与github发布.html
+22  #
+~
+ NORMAL ▶ ⎇ master ▶ .git/COMMIT_EDITMSG[+]      ◀ gitcommit ◀◀ 100% ¶  22:  1
+&quot;.git/COMMIT_EDITMSG&quot; 22L, 588C [w]
+[master a11c890]    modified:   14477276500009.html     modified:   14477491132970.html     modified:   14477519570037.html     modified:   14477677420859.html     modified:   all.html    modified:   archives.html   modified:   atom.xml    modified:   index.html  modified:   sitemap.xml     modified:   猫技术.html    modified:   聘方.html     MWeb与github发布.html
+ 11 files changed, 255 insertions(+), 2 deletions(-)
 
-<p>不管是过一个不浪费的人生，还是想要有个有趣科学发现的创造人生。两位教授的做法，某种意义上，异曲同工。</p>
+ArvinYu at yandongdeMacBook-Pro in ~/git/ywriter/yuyandong.github.io  [A1u] [master]
+:$; git push origin master                        2.2.1p85
+Counting objects: 12, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 4.02 KiB | 0 bytes/s, done.
+Total 12 (delta 10), reused 0 (delta 0)
+To git@github.com:yuyandong/yuyandong.github.io.git
+   e517174..a11c890  master -&gt; master
 
-<blockquote>
-<p>人生在于体验，不在于种种总结和提炼。  赫伯特.西蒙</p>
-</blockquote>
 
-<p>记于 20200123 返家途中</p>
+</code></pre>
+
+<hr/>
+
+<p>欢迎联系 Arvin Yu , 邮箱：<a href="mailto:yuyandong@outlook.com">yuyandong@outlook.com</a>  </p>
+
+<p>本作品采用 <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">知识共享署名-非商业性使用-禁止演绎 3.0 Unported许可协议</a> 进行许可。</p>
 
                         
                       </div>
@@ -144,16 +195,16 @@
                 <div class="read-more clearfix">
                   <div class="more-left left">
                   
-                    <span class="date">2020/1/22</span>
+                    <span class="date">2015/11/18</span>
                     <span>posted in&nbsp;</span> 
           				  
-          					    <span class="posted-in"><a href='notes.html'>笔记添枝</a></span>
+          					    <span class="posted-in"><a href='IT.html'>技能新法</a></span>
           				   
                   </div>
                   <div class="more-right right">
                   <span class="comments">
                       
-                        <a href="https://yuyandong.com/15797025486516.html#disqus_thread">comments</a>
+                        <a href="https://yuyandong.com/update-blog.html#disqus_thread">comments</a>
                       
 
                        
@@ -168,12 +219,12 @@
 			<div class="row">
 			  <div class="large-6 columns">
 			  <p class="text-left" style="padding-top:25px;">
-			   <a href="notes_4.html">&laquo; Prev Page</a>  
+			   <a href="all_34.html">&laquo; Prev Page</a>  
 			  </p>
 			  </div>
 			  <div class="large-6 columns">
 			<p class="text-right" style="padding-top:25px;">
-			 <a href="notes_6.html">&raquo; Next Page</a> 
+			 <a href="all_36.html">&raquo; Next Page</a> 
 			</p>
 			  </div>
 			</div>
