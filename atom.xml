@@ -4,7 +4,7 @@
   <title><![CDATA[ Arvin Yu 的个人网站]]></title>
   <link href="https://yuyandong.com/atom.xml" rel="self"/>
   <link href="https://yuyandong.com/"/>
-  <updated>2021-05-02T12:28:39+08:00</updated>
+  <updated>2021-05-02T12:28:55+08:00</updated>
   <id>https://yuyandong.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -33,9 +33,7 @@
 然后改动Adguard 上的Adguard 高级设置调整如下</p>
 
 <p><img src="https://i.imgur.com/MWdhiL4.png" alt=""/><br/>
-注意： 还需要改动Adguard 上面的网络</p>
-
-<p><img src="https://i.imgur.com/d2bxfia.png" alt=""/></p>
+注意： 不需要改动Adguard 上面的网络</p>
 
 <p>毕竟就是双DL模式啊，关联设置后，这两个软件就不冲突了。</p>
 
