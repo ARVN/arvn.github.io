@@ -4,13 +4,43 @@
   <title><![CDATA[ Arvin Yu 的个人网站]]></title>
   <link href="https://yuyandong.com/atom.xml" rel="self"/>
   <link href="https://yuyandong.com/"/>
-  <updated>2021-05-02T16:52:45+08:00</updated>
+  <updated>2021-05-02T17:06:13+08:00</updated>
   <id>https://yuyandong.com/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[Adguard Mac 桌面端 广告过滤]]></title>
+    <link href="https://yuyandong.com/16199279425828.html"/>
+    <updated>2021-05-02T11:59:02+08:00</updated>
+    <id>https://yuyandong.com/16199279425828.html</id>
+    <content type="html"><![CDATA[
+<p>打开网页，发现页面广告冒了出来。<br/>
+确认是Adguard 没有起作用。再App Store 下载 Adguard for safari 插件能去除广告；<br/>
+应该是和某些软件起冲突了，搜索过程中发现网友提及 和利用 Network Extendsions 功能的软件冲突。</p>
+
+<p><a href="https://kb.adguard.com/en/macos/solving-problems/big-sur-issues#shadowsocks">Adguard 官网帮助页面</a>提供的解决方案，有特别提到软件的 Enhance Mode </p>
+
+<p>，现在用的Cxxxh 没有这个模块，网友提到 Cxxx Pro 版本有此模块，github 找到C Pro 的链接地址，然后安装。</p>
+
+<p>类比官网的 <img src="https://i.imgur.com/UZqf34r.png" alt="操作指导图"/></p>
+
+<p>再Pro 上做了如下设置后，<br/>
+<img src="https://i.imgur.com/gybpICP.png" alt=""/><br/>
+然后改动Adguard 上的高级设置调整如下</p>
+
+<p><img src="https://i.imgur.com/MWdhiL4.png" alt=""/><br/>
+注意： 另外要改动Adguard 上面的网络</p>
+
+<p><img src="https://i.imgur.com/d2bxfia.png" alt=""/></p>
+
+<p>毕竟就是双DL模式啊，关联设置后，这两个软件就不冲突了。</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[墙角一枝梅]]></title>
@@ -1355,75 +1385,6 @@
 <p>可是也如我之前所说，管理的秘诀说的再多，也复制不来（复制只是低智学习）。然而把它们当作一个提醒，当读完书实践起来的时候，能记起人才移植的不易，多样化成长的人才财富，简练的清单选材策略。</p>
 
 <p>春江水暖鸭先知，如此也好。</p>
-
-<hr/>
-
-<p>欢迎联系 Arvin Yu , 邮箱：<a href="mailto:yuyandong@outlook.com">yuyandong@outlook.com</a><br/><br/>
-本作品采用 <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/">知识共享署名-非商业性使用-禁止演绎 3.0 Unported许可协议</a> 进行许可。</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[批量招聘案例]]></title>
-    <link href="https://yuyandong.com/1-case.html"/>
-    <updated>2016-03-06T09:56:38+08:00</updated>
-    <id>https://yuyandong.com/1-case.html</id>
-    <content type="html"><![CDATA[
-<p>今天翻资料，看到这张图，记录于此，以便回忆。</p>
-
-<h2 id="toc_0">背景概述</h2>
-
-<p>林业种植和采伐机械化运作，在中国走最远的是芬兰的这家公司。</p>
-
-<p>从2014 底开始，除了请来麦肯锡做全公司的改革咨询，机械采伐团队亦为了实现年 150万立方 的采伐量而加快了集中化管理进程。</p>
-
-<p>于是团队的改革先动了，不仅要招聘机械化运作经理和现场管理人员，还有一大批的现场操作人员需要招聘。<br/>
-当时进口采伐机械专项项目——8个培训班次 ，70多名新机手的招聘（1 批次招聘的目标是 8 人） 。</p>
-
-<h2 id="toc_1">项目规划分解</h2>
-
-<p>项目任务紧，2015 年每个月都要进一批人，配合将到港口的机器，以8-10 人为宜。当时想要增加一些人手，于是我画了下图，后面因为多种原因，最后还是一个人操刀了。</p>
-
-<p>这张图规划了当时想要的人力资源，以及分解了项目前期操作上一些分工和进度计划。<br/>
-<img src="media/14572293989748/14572294177758.jpg" alt=""/></p>
-
-<h2 id="toc_2">项目具体执行与效果</h2>
-
-<h3 id="toc_3">执行策略</h3>
-
-<p>当时的实践——<strong>策略的调整</strong> </p>
-
-<blockquote>
-<ul>
-<li>首先从招聘流程入手，和采伐部门讨论他们对新机械操作手的招聘需求（特别是机器到港口的时间），评估和确定了每一培训班次的入职时间，确保在该时间节点完成该班次 8 位新人入职；</li>
-<li>并定制流程节点，加快招聘速度：比如：在新招聘需求的审批，文件提交走的过程中，提前展开招聘方案并大力地实施（广告发布、 甄选、入职安排 ）；</li>
-<li>当然还有招募的方式和面试的方式的诸多调整（一上午面试10-15人），比如带候选人到林地参观……<br/>
-省略招聘体验方面的流程</li>
-</ul>
-</blockquote>
-
-<h3 id="toc_4">效果</h3>
-
-<p>招聘每个月为公司增进了几百万元的产量。</p>
-
-<pre><code class="language-text">a) 12 年有 2 个招聘经理 + 1 个招聘助理负责该项目，14 年到我接手后， 由我 1 人负责； 
-b) 招聘周期从2 个月完成 --&gt; 1 个月--&gt; 2 周完成；
-c) 产量收入至少每个月增加： 30 天X15 万/天=450 万元 ； 
-
-</code></pre>
-
-<p><strong>数字估算过程如下</strong><br/>
-正常作业的情况下，一个机器 24 小时，300 方的作业量，机器空一天的损失是 100 方 x 3 个班次 X 700 元 = 210，000 元；<br/>
-新机器到来的时候，确保新机手已经完成培训，能马上开始投入工作。<br/>
-如果空缺1个人那就是 一天 6-7 万元的损失！ 一个招聘批次 8-10 个人，那 1 天就是 60-70 万的业务影响；<br/>
-针对新人不可能一开始就正常作业，我们把他们的产出减半。当机器到港后，招聘到岗晚一天，一天就有 20-30-40 万的产量损失。</p>
-
-<p>这次策略的调整带来的收益有多少呢？ </p>
-
-<blockquote>
-<p>按产量 至少每个月 30 天 X 15 万=450万元 。</p>
-</blockquote>
 
 <hr/>
 
