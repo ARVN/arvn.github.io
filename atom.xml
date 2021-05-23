@@ -4,7 +4,7 @@
   <title><![CDATA[ Arvin Yu 的个人网站]]></title>
   <link href="https://yuyandong.com/atom.xml" rel="self"/>
   <link href="https://yuyandong.com/"/>
-  <updated>2021-05-23T13:59:58+08:00</updated>
+  <updated>2021-05-23T14:02:07+08:00</updated>
   <id>https://yuyandong.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -18,13 +18,12 @@
     <updated>2021-05-02T11:59:02+08:00</updated>
     <id>https://yuyandong.com/16199279425828.html</id>
     <content type="html"><![CDATA[
-<p>打开网页，发现页面广告冒了出来。<br/>
-确认是Adguard 没有起作用。再App Store 下载 Adguard for safari 插件能去除广告；<br/>
+<p>打开网页，发现页面广告冒了出来。</p>
+
+<p>确认是Adguard 没有起作用。再App Store 下载 Adguard for safari 插件能去除广告；<br/>
 应该是和某些软件起冲突了，搜索过程中发现网友提及 和利用 Network Extendsions 功能的软件冲突。</p>
 
-<p><a href="https://kb.adguard.com/en/macos/solving-problems/big-sur-issues#shadowsocks">Adguard 官网帮助页面</a>提供的解决方案，有特别提到软件的 Enhance Mode </p>
-
-<p>，现在用的Cxxxh 没有这个模块，网友提到 Cxxx Pro 版本有此模块，github 找到C Pro 的链接地址，然后安装。</p>
+<p><a href="https://kb.adguard.com/en/macos/solving-problems/big-sur-issues#shadowsocks">Adguard 官网帮助页面</a>提供的解决方案，有特别提到软件的 Enhance Mode ，现在用的Cxxxh 没有这个模块，网友提到 Cxxx Pro 版本有此模块，github 找到C Pro 的链接地址，然后安装。</p>
 
 <p>类比官网的</p>
 
@@ -45,7 +44,7 @@
 
 <p>因为经常出现不稳定的情况，后面我就不用Claxxxx 这个软件了。改用2ray 软件！不为折腾浪费时间和心情了！</p>
 
-<p>新的工具用的很顺心，老的工具用的不顺心，有很大可能是它不适应新的形势了————及时做出判断，找到可替代的软件测试使用，在不稳定的情况下，有它的必要性。</p>
+<p>新的工具用的很顺心，老的工具用的不顺心，有很大可能是它不适应新的形势了——及时做出判断，找到可替代的软件测试使用，在不稳定的情况下，有它的必要性。</p>
 
 ]]></content>
   </entry>
