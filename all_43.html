@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  面试中的心理安全和信任 -  Arvin Yu 的个人网站
+   Arvin Yu 的个人网站
   
   </title>
   
@@ -97,104 +97,137 @@
        
 
  <script type="text/javascript">
-  $(function(){
-    $('#menu_item_index').addClass('is_active');
-  });
+	$(function(){
+		$('#menu_item_index').addClass('is_active');
+	});
 </script>
 <div class="row">
-  <div class="large-8 medium-8 columns">
-      <div class="markdown-body article-wrap">
-       <div class="article">
-          
-          <h1>面试中的心理安全和信任</h1>
-     
-        <div class="read-more clearfix">
-          <span class="date">2020/12/6</span>
+	<div class="large-8 medium-8 columns">
+		<div class="markdown-body home-categories">
+		
+			<div class="article">
+                <a class="clearlink" href="update-blog.html">
+                
+                  <h1>技能新法：更新 blog 文件后，清晰、快速同步到 github</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>因为使用MWeb管理博客，基本上任一处改动，它都需要重新打包文件生成网页。<br/>
+（一次改动就涉及多个文件，它没有将改动直接同步到github的功能。）</p>
 
-          <span>posted in&nbsp;</span> 
-          
-              <span class="posted-in"><a href='hiring.html'>「聘方」小品</a></span>
-           
-         
-          <span class="comments">
-            
-              <a href="https://yuyandong.com/16072386725625.html#disqus_thread">comments</a>
-            
+<ul>
+<li><p>文件夹里面哪些已经被它改动了，缺少清晰的提示。</p></li>
+<li><p>每次更改后，要全部本地文件都提交到远程仓库又不合理。</p></li>
+<li><p>那么有哪些git的命令能让我们更容易省事呢？</p></li>
+</ul>
 
-            
-          </span>
+<p>换个思路，其实也方便清晰知道哪些文件被改动了，然后就快速了。</p>
 
-        </div>
-      </div><!-- article -->
+<h3 id="toc_0">我使用如下步骤完成：</h3>
 
-      <div class="article-content">
-      <p>我们印象中的面试，是这样子的：简历通过筛选，进入面试环节，交流开始了（你以为有用的交流开始了）。</p>
+<ol>
+<li><p>使用 <code>git status</code>查看不同；</p></li>
+<li><p>使用<code>git commit -a</code> 唤出哪些漏掉了没有及时commit ，此时终端会自动打开编辑器<code>Vim</code>（Vi)，在里面完成编辑，<code>:wq</code> 退出 即可；</p></li>
+<li><p>使用 <code>git push origin master</code> 完成提交  </p></li>
+</ol>
 
-<p>但很多时候，面试对话中，容易变成单向对话——由面试官问问题，候选人答问题。</p>
+<h3 id="toc_1">本文改动后，实现过程的代码如下</h3>
 
-<p>这样的问与答，对话内容多半不坦率，即便不赞成，他也会藏匿于心，并不表明。</p>
+<pre><code class="language-text">$; git status                                    2.2.1p85
+On branch master
+Your branch is up-to-date with &#39;origin/master&#39;.
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+ 21
+ 20 # Please enter the commit message for your changes. Lines starting
+ 19 # with &#39;#&#39; will be ignored, and an empty message aborts the commit.
+ 18 # On branch master
+ 17 # Your branch is up-to-date with &#39;origin/master&#39;.
+ 16 #
+ 15 # Changes to be committed:
+ 14         modified:   14477276500009.html
+ 13         modified:   14477491132970.html
+ 12         modified:   14477519570037.html
+ 11         modified:   14477677420859.html
+ 10         modified:   all.html
+  9         modified:   archives.html
+  8         modified:   atom.xml
+  7         modified:   index.html
+  6         modified:   sitemap.xml
+  5         modified:   猫技术.html
+  4         modified:   聘方.html
+  3 #
+  2 # Untracked files:
+  1         MWeb与github发布.html
+22  #
+~
+ NORMAL ▶ ⎇ master ▶ .git/COMMIT_EDITMSG[+]      ◀ gitcommit ◀◀ 100% ¶  22:  1
+&quot;.git/COMMIT_EDITMSG&quot; 22L, 588C [w]
+[master a11c890]    modified:   14477276500009.html     modified:   14477491132970.html     modified:   14477519570037.html     modified:   14477677420859.html     modified:   all.html    modified:   archives.html   modified:   atom.xml    modified:   index.html  modified:   sitemap.xml     modified:   猫技术.html    modified:   聘方.html     MWeb与github发布.html
+ 11 files changed, 255 insertions(+), 2 deletions(-)
 
-<p>也有很多求职者，尽其所能表达、 表述个人经验。比如我以前遇到xxxx，比如业绩如何如何xxx，证明自己，胜任工作岗位。此类实际还是单向的表达————还真不能接通更多有效信息。</p>
-
-<p>那如何让对话如何从单向咨询结构，改变为双方对话结构？ </p>
-
-<p>我们先来看下面试者能做的小改变有哪？</p>
-
-<h3 id="toc_0">转变对话关系 01</h3>
-
-<p>面试者知道如何回答，但是除了回答外，你还有提问的时候，利用好它，转变对话中的关系。</p>
-
-<p>面试中拉近你与面试官的距离的方式有很多种，这样的一些小技巧可以使用，比如：姿势模仿，比如问问题！比如你问对方 “我的日常工作是什么?” “怎样才能快速上手?” 措辞中假设自己已被录用，能帮助潜在老板在脑海里构建一幅与你共同开展工作的画面。 </p>
-
-<p>与此同时，你可以观察他的反应。在你提问的时候，他是否有谈话的主动意愿？只是照本宣科吗？</p>
-
-<p>如面试官主动与你展开谈话，多少意味着他有与你共事的意愿。当然在没有建立友善的关系前，你问上面的问题的机会和意义都不大。</p>
-
-<p>上面问的类似问题，一定程度上，能激发他对你填补空缺职位的期待，同时你也有机会听到一些，他对你透露，关于这份工作可能的负面信息。</p>
-
-<p>读到这里，也愿你在面试的时候，感受到阳光的温暖，舒适交流，徜徉其中。</p>
-
-<p>（其他待续……）</p>
-
-
-    
-
-      </div>
-
-      <div class="row">
-        <div class="large-6 columns">
-        <p class="text-left" style="padding:15px 0px;">
-      
-          <a href="qiang-jiao-yi-zhi-meigang-cai.html" 
-          title="Previous Post: 墙角一枝梅">&laquo; 墙角一枝梅</a>
-      
-        </p>
-        </div>
-        <div class="large-6 columns">
-      <p class="text-right" style="padding:15px 0px;">
-      
-          <a  href="15962966079740.html" 
-          title="Next Post: 不是白玫瑰，也不是红玫瑰">不是白玫瑰，也不是红玫瑰 &raquo;</a>
-      
-      </p>
-        </div>
-      </div>
-      <div class="comments-wrap">
-        <div class="share-comments">
-          
-
-          
-            <div id="disqus_thread"></div>
-          
-
-          
-        </div>
-      </div>
-    </div><!-- article-wrap -->
-  </div><!-- large 8 -->
+ArvinYu at yandongdeMacBook-Pro in ~/git/ywriter/yuyandong.github.io  [A1u] [master]
+:$; git push origin master                        2.2.1p85
+Counting objects: 12, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 4.02 KiB | 0 bytes/s, done.
+Total 12 (delta 10), reused 0 (delta 0)
+To git@github.com:yuyandong/yuyandong.github.io.git
+   e517174..a11c890  master -&gt; master
 
 
+</code></pre>
 
+<hr/>
+
+<p>欢迎联系 Arvin Yu , 邮箱：<a href="mailto:yuyandong@outlook.com">yuyandong@outlook.com</a>  </p>
+
+<p>本作品采用 <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">知识共享署名-非商业性使用-禁止演绎 3.0 Unported许可协议</a> 进行许可。</p>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2015/11/18</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='IT.html'>技能新法</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="https://yuyandong.com/update-blog.html#disqus_thread">comments</a>
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+              
+
+
+			<div class="row">
+			  <div class="large-6 columns">
+			  <p class="text-left" style="padding-top:25px;">
+			   <a href="all_42.html">&laquo; Prev Page</a>  
+			  </p>
+			  </div>
+			  <div class="large-6 columns">
+			<p class="text-right" style="padding-top:25px;">
+			
+			</p>
+			  </div>
+			</div>
+		</div>
+	</div><!-- large 8 -->
 
  <div class="large-4 medium-4 columns">
   <div class="hide-for-small">
