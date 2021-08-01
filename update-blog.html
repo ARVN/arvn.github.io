@@ -128,37 +128,43 @@
       </div><!-- article -->
 
       <div class="article-content">
-      <p>因为使用MWeb管理博客，基本上任一处改动，它都需要重新打包文件生成网页。<br/>
+      <p>因为使用MWeb管理博客，基本上任一处改动，它都需要重新打包文件生成网页。<br />
 （一次改动就涉及多个文件，它没有将改动直接同步到github的功能。）</p>
-
 <ul>
-<li><p>文件夹里面哪些已经被它改动了，缺少清晰的提示。</p></li>
-<li><p>每次更改后，要全部本地文件都提交到远程仓库又不合理。</p></li>
-<li><p>那么有哪些git的命令能让我们更容易省事呢？</p></li>
+<li>
+<p>文件夹里面哪些已经被它改动了，缺少清晰的提示。</p>
+</li>
+<li>
+<p>每次更改后，要全部本地文件都提交到远程仓库又不合理。</p>
+</li>
+<li>
+<p>那么有哪些git的命令能让我们更容易省事呢？</p>
+</li>
 </ul>
-
 <p>换个思路，其实也方便清晰知道哪些文件被改动了，然后就快速了。</p>
-
-<h3 id="toc_0">我使用如下步骤完成：</h3>
-
+<p>###我使用如下步骤完成：</p>
 <ol>
-<li><p>使用 <code>git status</code>查看不同；</p></li>
-<li><p>使用<code>git commit -a</code> 唤出哪些漏掉了没有及时commit ，此时终端会自动打开编辑器<code>Vim</code>（Vi)，在里面完成编辑，<code>:wq</code> 退出 即可；</p></li>
-<li><p>使用 <code>git push origin master</code> 完成提交  </p></li>
+<li>
+<p>使用 <code>git status </code>查看不同；</p>
+</li>
+<li>
+<p>使用<code>git commit -a</code> 唤出哪些漏掉了没有及时commit ，此时终端会自动打开编辑器<code>Vim </code>（Vi)，在里面完成编辑，<code>:wq</code> 退出 即可；</p>
+</li>
+<li>
+<p>使用 <code>git push origin master</code> 完成提交</p>
+</li>
 </ol>
-
-<h3 id="toc_1">本文改动后，实现过程的代码如下</h3>
-
-<pre><code class="language-text">$; git status                                    2.2.1p85
+<p>###本文改动后，实现过程的代码如下</p>
+<pre><code>$; git status                                    2.2.1p85
 On branch master
-Your branch is up-to-date with &#39;origin/master&#39;.
+Your branch is up-to-date with 'origin/master'.
 Changes not staged for commit:
   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
  21
  20 # Please enter the commit message for your changes. Lines starting
- 19 # with &#39;#&#39; will be ignored, and an empty message aborts the commit.
+ 19 # with '#' will be ignored, and an empty message aborts the commit.
  18 # On branch master
- 17 # Your branch is up-to-date with &#39;origin/master&#39;.
+ 17 # Your branch is up-to-date with 'origin/master'.
  16 #
  15 # Changes to be committed:
  14         modified:   14477276500009.html
@@ -179,7 +185,7 @@ Changes not staged for commit:
 ~
  NORMAL ▶ ⎇ master ▶ .git/COMMIT_EDITMSG[+]      ◀ gitcommit ◀◀ 100% ¶  22:  1
 &quot;.git/COMMIT_EDITMSG&quot; 22L, 588C [w]
-[master a11c890]    modified:   14477276500009.html     modified:   14477491132970.html     modified:   14477519570037.html     modified:   14477677420859.html     modified:   all.html    modified:   archives.html   modified:   atom.xml    modified:   index.html  modified:   sitemap.xml     modified:   猫技术.html    modified:   聘方.html     MWeb与github发布.html
+[master a11c890] 	modified:   14477276500009.html 	modified:   14477491132970.html 	modified:   14477519570037.html 	modified:   14477677420859.html 	modified:   all.html 	modified:   archives.html 	modified:   atom.xml 	modified:   index.html 	modified:   sitemap.xml 	modified:   猫技术.html 	modified:   聘方.html 	MWeb与github发布.html
  11 files changed, 255 insertions(+), 2 deletions(-)
 
 ArvinYu at yandongdeMacBook-Pro in ~/git/ywriter/yuyandong.github.io  [A1u] [master]
@@ -194,11 +200,8 @@ To git@github.com:yuyandong/yuyandong.github.io.git
 
 
 </code></pre>
-
-<hr/>
-
-<p>欢迎联系 Arvin Yu , 邮箱：<a href="mailto:yuyandong@outlook.com">yuyandong@outlook.com</a>  </p>
-
+<hr />
+<p>欢迎联系 Arvin Yu , 邮箱：<a href="mailto:yuyandong@outlook.com">yuyandong@outlook.com</a></p>
 <p>本作品采用 <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">知识共享署名-非商业性使用-禁止演绎 3.0 Unported许可协议</a> 进行许可。</p>
 
 
@@ -295,6 +298,12 @@ To git@github.com:yuyandong/yuyandong.github.io.git
 	      
 		      
 			      <li class="post">
+			        <a href="16278107396235.html">理解Cult 片</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="16244630350862.html">抵过日常酒</a>
 			      </li>
 		     
@@ -314,12 +323,6 @@ To git@github.com:yuyandong/yuyandong.github.io.git
 		      
 			      <li class="post">
 			        <a href="qiang-jiao-yi-zhi-meigang-cai.html">墙角一枝梅</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="16072386725625.html">面试中的心理安全和信任</a>
 			      </li>
 		     
 		  
@@ -416,7 +419,7 @@ s.src = '//' + disqus_shortname + '.disqus.com/count.js';
     </script>
 
     
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_SVG-full"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
 
 
   </body>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  读《庄子四讲》（一） -  Arvin Yu 的个人网站
+   Arvin Yu 的个人网站
   
   </title>
   
@@ -97,102 +97,140 @@
        
 
  <script type="text/javascript">
-  $(function(){
-    $('#menu_item_index').addClass('is_active');
-  });
+	$(function(){
+		$('#menu_item_index').addClass('is_active');
+	});
 </script>
 <div class="row">
-  <div class="large-8 medium-8 columns">
-      <div class="markdown-body article-wrap">
-       <div class="article">
-          
-          <h1>读《庄子四讲》（一）</h1>
-     
-        <div class="read-more clearfix">
-          <span class="date">2020/3/9</span>
+	<div class="large-8 medium-8 columns">
+		<div class="markdown-body home-categories">
+		
+			<div class="article">
+                <a class="clearlink" href="update-blog.html">
+                
+                  <h1>技能新法：更新 blog 文件后，清晰、快速同步到 github</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>因为使用MWeb管理博客，基本上任一处改动，它都需要重新打包文件生成网页。<br />
+（一次改动就涉及多个文件，它没有将改动直接同步到github的功能。）</p>
+<ul>
+<li>
+<p>文件夹里面哪些已经被它改动了，缺少清晰的提示。</p>
+</li>
+<li>
+<p>每次更改后，要全部本地文件都提交到远程仓库又不合理。</p>
+</li>
+<li>
+<p>那么有哪些git的命令能让我们更容易省事呢？</p>
+</li>
+</ul>
+<p>换个思路，其实也方便清晰知道哪些文件被改动了，然后就快速了。</p>
+<p>###我使用如下步骤完成：</p>
+<ol>
+<li>
+<p>使用 <code>git status </code>查看不同；</p>
+</li>
+<li>
+<p>使用<code>git commit -a</code> 唤出哪些漏掉了没有及时commit ，此时终端会自动打开编辑器<code>Vim </code>（Vi)，在里面完成编辑，<code>:wq</code> 退出 即可；</p>
+</li>
+<li>
+<p>使用 <code>git push origin master</code> 完成提交</p>
+</li>
+</ol>
+<p>###本文改动后，实现过程的代码如下</p>
+<pre><code>$; git status                                    2.2.1p85
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+ 21
+ 20 # Please enter the commit message for your changes. Lines starting
+ 19 # with '#' will be ignored, and an empty message aborts the commit.
+ 18 # On branch master
+ 17 # Your branch is up-to-date with 'origin/master'.
+ 16 #
+ 15 # Changes to be committed:
+ 14         modified:   14477276500009.html
+ 13         modified:   14477491132970.html
+ 12         modified:   14477519570037.html
+ 11         modified:   14477677420859.html
+ 10         modified:   all.html
+  9         modified:   archives.html
+  8         modified:   atom.xml
+  7         modified:   index.html
+  6         modified:   sitemap.xml
+  5         modified:   猫技术.html
+  4         modified:   聘方.html
+  3 #
+  2 # Untracked files:
+  1         MWeb与github发布.html
+22  #
+~
+ NORMAL ▶ ⎇ master ▶ .git/COMMIT_EDITMSG[+]      ◀ gitcommit ◀◀ 100% ¶  22:  1
+&quot;.git/COMMIT_EDITMSG&quot; 22L, 588C [w]
+[master a11c890] 	modified:   14477276500009.html 	modified:   14477491132970.html 	modified:   14477519570037.html 	modified:   14477677420859.html 	modified:   all.html 	modified:   archives.html 	modified:   atom.xml 	modified:   index.html 	modified:   sitemap.xml 	modified:   猫技术.html 	modified:   聘方.html 	MWeb与github发布.html
+ 11 files changed, 255 insertions(+), 2 deletions(-)
 
-          <span>posted in&nbsp;</span> 
-          
-              <span class="posted-in"><a href='notes.html'>笔记日常</a></span>
-           
-         
-          <span class="comments">
-            
-              <a href="https://yuyandong.com/15837616520341.html#disqus_thread">comments</a>
-            
-
-            
-          </span>
-
-        </div>
-      </div><!-- article -->
-
-      <div class="article-content">
-      <p>写于2012年4月8日</p>
-<p>书很薄，四个主题绕着“活动机制”而走了130多页。<br />
-没有过多的引用，繁复的考究，更多是阐述文本。</p>
-<p>作者试图开辟新视野，基于他的认定：<br />
-1、庄子是在谈论具体的经验或是共通经验的哪一个方面，而不是推演概念；<br />
-2、庄子是在描述这些经验，非常精确，非常精彩，描述“无限亲近”与“几乎当下”的现象；<br />
-新途径就是“可以依靠这些描述去理解庄子的一些核心思想，而由此一步一步走进未能理解的区域”</p>
-<p>第一讲：运作<br />
-共从三个对话文本进入阐释，“我们这样去研究《庄子》，同时打开了两个工作场域：其一是文本，要字斟句酌地重新读解；其二是根据《庄子》的启发，根据它给我们提供的一些崭新的观点去重新阐释自己的经验。<br />
-这种探索，我是从一些相对容易的文本开始的，……学习过程的不同阶段、动作的不可传授性、经过刻苦锻炼达成的行动之自然，等等……”</p>
-<p>1、学习过程的不同阶段<br />
-“庖丁解牛”这个著名运作肯定是不可错过的。毕莱德说“我只关心文章开头的那段描述，也就是庖丁对他自己学习过程的描述”</p>
-<p>庖丁为文惠君解牛，手之所触，肩之所倚，足之所履，膝之所踦，砉然向然，奏刀騞然，莫不中音。合于《桑林》之舞，乃中《经首》之会。文惠君曰：“嘻，善哉！技盍至此乎？” 庖丁释刀对曰：“臣之所好者道也，进乎技矣。始臣之解牛之时，所见无非牛者。三年之后，未尝见全牛也。方今之时，臣以神遇而不以目视，官知止而神欲行。依乎天理，批大郤，导大窾，因其固然，技经肯綮之未尝，而况大軱乎！良庖岁更刀，割也；族庖月更刀，折也。今臣之刀十九年矣，所解数千牛矣，而刀刃若新发于硎。彼节者有间，而刀刃者无厚；以无厚入有间，恢恢乎其于游刃必有余地矣，是以十九年而刀刃若新发于硎。虽然，每至于族，吾见其难为，怵然为戒，视为止，行为迟。动刀甚微，謋然已解，如土委地。提刀而立，为之四顾，为之踌躇满志，善刀而藏之。” 文惠君曰：“善哉，吾闻庖丁之言，得养生焉。”</p>
-<p>2、动作的不可传授性<br />
-“轮扁斫轮”《天道》里的一个故事，“我们在此仍然只关注一点，既是论人对他的工作经验的描述”。</p>
-<p>桓公读书于堂上，轮扁斫轮于堂下，释椎凿而上，问桓公曰：“敢问：“公之所读者，何言邪？”公曰：“圣人之言也。”曰：“圣人在乎？”公曰：“已死矣。”曰：“然则君之所读者，古人之糟粕已夫！”桓公曰：“寡人读书，轮人安得议乎！有说则可，无说则死！”轮扁曰：“臣也以臣之事观之。斫轮，徐则甘而不固，疾则苦而不入，不徐不疾，得之于手而应于心，口不能言，有数存焉于其间。臣不能以喻臣之子，臣之子亦不能受之于臣，是以行年七十而老斫轮。</p>
-<p>3、经过刻苦锻炼达成的行动之自然<br />
-孔子观于吕梁的对话：<br />
-孔子观于吕梁，县水三十仞，流沫四十里，鼋鼍鱼鳖之所不能游也。见一丈夫游之，以为有苦而欲死也，使弟子并流而拯之。数百步而出，被发行歌而游于塘下。孔子从而问焉，曰：“吾以子为鬼，察子则人也。请问，‘蹈水有道乎’？”曰：“亡，吾无道。吾始乎故，长乎性，成乎命。与齐俱入，与汩偕出，从水之道而不为私焉。此吾所以蹈之也。”孔子曰：“何谓始乎故，长乎性，成乎命？”曰：“吾生于陵而安于陵，故也；长于水而安于水，性也；不知吾所以然而然，命也。”</p>
-<p>三则对话文本中：<br />
-“都有一个人物在行动，引发了别人的欣赏或是惊异。那个人开始完全沉浸在自己的实践当中。别人向他提出了问题，他才停下来说话，并对他的实践加以解释。他的表述清晰透彻，言简意赅，因为它不需要证明什么；他行动所表现出来的能力本身就是一个充分的证明。他只是描述自己的运作，并且很自然就赋予了这一描述一种普遍意义。”</p>
-<p>普遍意义——道</p>
-<p>当文慧君看过庖丁解牛之后，他感叹道：“嘻，善哉！技盖至此乎？”技术居然可以达到这个程度啊？庖丁的回答，字面上是：“臣之所好者，道也。”“进乎技矣”。毕莱德翻译是：“你的臣仆我所喜好的乃是事物之运作，而不只是技术。”</p>
-<p>而当孔子追赶上他的弟子，向河边那位男子提问的时候，他的问题字面上是：“蹈水有道乎？这样浮游于水有一个道吗？毕莱德翻译是：“您这么浮游于水有什么方法吗？”</p>
-<p>“庄子笔下，‘道’这个词还不曾表示一种已经定形的概念，更毋庸说一种已经神圣化的概念了。……在他那个时代自由使用这个字是很自然的事，‘道’还不曾取得后来的那种权威性。</p>
-
-
-    
-
-      </div>
-
-      <div class="row">
-        <div class="large-6 columns">
-        <p class="text-left" style="padding:15px 0px;">
-      
-          <a href="15837617426224.html" 
-          title="Previous Post: 读《庄子四讲》杂">&laquo; 读《庄子四讲》杂</a>
-      
-        </p>
-        </div>
-        <div class="large-6 columns">
-      <p class="text-right" style="padding:15px 0px;">
-      
-          <a  href="15328538235660.html" 
-          title="Next Post: 读《庄子四讲》（二）">读《庄子四讲》（二） &raquo;</a>
-      
-      </p>
-        </div>
-      </div>
-      <div class="comments-wrap">
-        <div class="share-comments">
-          
-
-          
-            <div id="disqus_thread"></div>
-          
-
-          
-        </div>
-      </div>
-    </div><!-- article-wrap -->
-  </div><!-- large 8 -->
+ArvinYu at yandongdeMacBook-Pro in ~/git/ywriter/yuyandong.github.io  [A1u] [master]
+:$; git push origin master                        2.2.1p85
+Counting objects: 12, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 4.02 KiB | 0 bytes/s, done.
+Total 12 (delta 10), reused 0 (delta 0)
+To git@github.com:yuyandong/yuyandong.github.io.git
+   e517174..a11c890  master -&gt; master
 
 
+</code></pre>
+<hr />
+<p>欢迎联系 Arvin Yu , 邮箱：<a href="mailto:yuyandong@outlook.com">yuyandong@outlook.com</a></p>
+<p>本作品采用 <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">知识共享署名-非商业性使用-禁止演绎 3.0 Unported许可协议</a> 进行许可。</p>
 
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                  
+                    <span class="date">2015/11/18</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='IT.html'>技能新法</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+                        <a href="https://yuyandong.com/update-blog.html#disqus_thread">comments</a>
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+              
+
+
+			<div class="row">
+			  <div class="large-6 columns">
+			  <p class="text-left" style="padding-top:25px;">
+			   <a href="all_43.html">&laquo; Prev Page</a>  
+			  </p>
+			  </div>
+			  <div class="large-6 columns">
+			<p class="text-right" style="padding-top:25px;">
+			
+			</p>
+			  </div>
+			</div>
+		</div>
+	</div><!-- large 8 -->
 
  <div class="large-4 medium-4 columns">
   <div class="hide-for-small">
